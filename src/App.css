@@ -1,0 +1,461 @@
+.admin {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  .admincart .card {
+    width: 300px;
+    height: 300px
+  }
+  .HomePage{
+    text-decoration: none;
+    color: white !important;
+  }
+  .admincart .card_subtitle {
+    min-height: 10px !important;
+    /* max-height: 100px !important; */
+  }
+  
+  .admin h6 {
+    font-size: 15px !important;
+  }
+  
+  .admin input {
+    font-size: 15px !important;
+  }
+  
+  .admin .itembox {
+    max-width: 300px;
+    min-width: 100px !important;
+  }
+  .itembox{
+    margin-bottom: 10px;
+  }
+  .priceLocation {
+    display: flex;
+    justify-content: center;
+    /* margin-right: 15px; */
+  }
+  
+  .priceLocation h6 {
+    font-size: 15px !important;
+  }
+  
+  .imagestyle {
+    height: 20vh;
+    width: 100%;
+  }
+  
+  .suppr {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  input {
+    border: none;
+  }
+  
+  .priceLocation input {
+    width: 50px;
+  }
+  
+  .copydescription {
+    width: 100%;
+    min-height: 40px !important;
+    border: none;
+    color: black;
+    font-weight: 500;
+  }
+  
+  .copylocation {
+    width: 65px !important;
+    font-size: 15px !important;
+    font-weight: 500;
+  }
+  
+  .copynumber {
+    width: 30px !important;
+    font-size: 15px !important;
+    font-weight: 500;
+  }
+  
+  .buttoncard {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px !important;
+  }
+
+  .breadcrumbHome:hover {
+    cursor: pointer;
+    color:white;
+  }
+  .breadcrumbHome {
+    text-decoration: none !important;
+  }
+  
+  .breadcrumbs {
+    padding: 140px 0 0px 0;
+    min-height: 25vh;
+    position: relative;
+    background-image: url("./images/house2.jpg"), linear-gradient(#4b4b4b, #776d6d);
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* z-index: -1; */
+  }
+  
+  .breadcrumbs:before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    inset: 0;
+  }
+  
+  .breadcrumbsall {
+    transform: translateY(-45px);
+  }
+  
+  .breadcrumbs h2 {
+    font-size: 46px;
+    font-weight: 500;
+    color: #fff;
+  }
+  
+  .breadcrumbs ol {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0 0 10px 0;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  .breadcrumbs ol a {
+    color: rgba(255, 255, 255, 0.8);
+    transition: 0.3s;
+  }
+  
+  .breadcrumbs ol a:hover {
+    text-decoration: underline;
+  }
+  
+  .breadcrumbs ol li+li {
+    padding-left: 10px;
+  }
+  
+  .breadcrumbs ol li+li::before {
+    display: inline-block;
+    padding-right: 10px;
+    color: #fff;
+    content: "/";
+  }
+  
+
+  .admin {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  .admincart .card {
+    width: 300px;
+    height: 300px
+  }
+  .HomePage{
+    text-decoration: none;
+    color: white !important;
+  }
+  .admincart .card_subtitle {
+    min-height: 10px !important;
+    /* max-height: 100px !important; */
+  }
+  
+  .admin h6 {
+    font-size: 15px !important;
+  }
+  
+  .admin input {
+    font-size: 15px !important;
+  }
+  
+  .admin .itembox {
+    max-width: 300px;
+    min-width: 100px !important;
+  }
+  .itembox{
+    margin-bottom: 10px;
+  }
+  .priceLocation {
+    display: flex;
+    justify-content: center;
+    /* margin-right: 15px; */
+  }
+  
+  .priceLocation h6 {
+    font-size: 15px !important;
+  }
+  
+  .imagestyle {
+    height: 20vh;
+    width: 100%;
+  }
+  
+  .suppr {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  input {
+    border: none;
+  }
+  
+  .priceLocation input {
+    width: 50px;
+  }
+  
+  .copydescription {
+    width: 100%;
+    min-height: 40px !important;
+    border: none;
+    color: black;
+    font-weight: 500;
+  }
+  
+  .copylocation {
+    width: 65px !important;
+    font-size: 15px !important;
+    font-weight: 500;
+  }
+  
+  .copynumber {
+    width: 30px !important;
+    font-size: 15px !important;
+    font-weight: 500;
+  }
+  
+  .buttoncard {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px !important;
+  }
+
+  .card {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    color: #2e2d31;
+    /* background: #131313; */
+    overflow: hidden;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .buttoncards{
+    display: flex;
+    justify-content: center;
+  }
+  .temporary_text {
+    font-weight: bold;
+    font-size: 24px;
+    padding: 6px 12px;
+    color: #f8f8f8;
+  }
+  
+  .card_title {
+    font-weight: bold;
+  }
+  
+  .card_content {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    /* edit the width to fit card */
+    width: 100%;
+    padding: 20px;
+    background: #f2f2f2;
+    border-top-left-radius: 20px;
+    /* edit here to change the height of the content box */
+    transform: translateY(150px);
+    transition: transform .25s;
+  }
+  
+  .card_content::before {
+    content: '';
+    position: absolute;
+    top: -47px;
+    right: -45px;
+    width: 100px;
+    height: 100px;
+    transform: rotate(-175deg);
+    border-radius: 50%;
+    box-shadow: inset 48px 48px #f2f2f2;
+  }
+  
+  .card_title {
+    color: #131313;
+    line-height: 15px;
+  }
+  
+  .card_subtitle {
+    display: block;
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  
+  .card_description {
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity .5s;
+    /* min-height: 50px; */
+  }
+  
+  .card:hover .card_content {
+    transform: translateY(0);
+  }
+  
+  .card:hover .card_description {
+    opacity: 1;
+    transition-delay: .25s;
+  }
+
+  
+  .about_section {
+    padding-bottom: 30px;
+    margin-top:40px ;
+  }
+  
+  .about_section_2 {
+    padding-top: 70px;
+    padding-bottom: 90px;
+  }
+  
+  .about_image {
+    width: 100%;
+    float: left;
+    padding-left: 22px;
+    padding-top: 37px;
+    object-fit: cover;
+  }
+  .about_image img{
+    width: 100%;
+  }
+  .about_taital {
+    width: 35%;
+    float: left;
+    font-size: 40px;
+    color: #0f0f0f;
+    font-weight: bold;
+  }
+  
+  .about_text {
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    color: #0f0f0f;
+    margin: 0px;
+    font-weight: 500;
+  }
+  
+  .lorem_text {
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    color: #0f0f0f;
+    margin: 0px;
+  }
+  
+  .about_taital_main {
+    width: 100%;
+    float: left;
+    padding-top: 95px;
+  }
+  
+  .breadcrumbHome:hover {
+    cursor: pointer;
+    color:white;
+  }
+  .breadcrumbHome {
+    text-decoration: none !important;
+  }
+  
+  .breadcrumbs {
+    padding: 140px 0 0px 0;
+    min-height: 25vh;
+    position: relative;
+    background-image: url("./images/house2.jpg"), linear-gradient(#4b4b4b, #776d6d);
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* z-index: -1; */
+  }
+  
+  .breadcrumbs:before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    inset: 0;
+  }
+  
+  .breadcrumbsall {
+    transform: translateY(-45px);
+  }
+  
+  .breadcrumbs h2 {
+    font-size: 46px;
+    font-weight: 500;
+    color: #fff;
+  }
+  
+  .breadcrumbs ol {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0 0 10px 0;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  .breadcrumbs ol a {
+    color: rgba(255, 255, 255, 0.8);
+    transition: 0.3s;
+  }
+  
+  .breadcrumbs ol a:hover {
+    text-decoration: underline;
+  }
+  
+  .breadcrumbs ol li+li {
+    padding-left: 10px;
+  }
+  
+  .pageli{
+    color: rgb(158, 158, 158);
+  }
+
+  .breadcrumbs ol li+li::before {
+    display: inline-block;
+    padding-right: 10px;
+    color: #fff;
+    content: "/";
+  }
+  
+  .nav-links{
+    text-decoration: none;
+  }
+  
+  .adminlink{
+    text-decoration: none;
+    color: white !important;
+  }
+  

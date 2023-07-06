@@ -1,0 +1,36 @@
+.Contentbg{
+    background-image: url(./images/house4.jpg);
+    background-position: center;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    height: 80vh;
+  }
+.homecontent{
+    background-color: transparent;
+    position: absolute;
+    top:calc(80vh - 55vh);
+    width: 80%;
+}
+.hometext{
+    color: rgb(247, 247, 247);
+}
+.hometext h6{
+    font-weight: 900;
+}
+.hometext h1{
+    font-size: 40px;
+    font-style: italic;
+    width: 60%;
+}
+.homebutton{
+    margin-top: 10px;
+}
+.homebutton .button2{
+    background-color:white;
+    margin-left: 10px;
+}
+@media (max-width: 800px) {
+    .hometext h1{
+        width:100%
+    }
+}
