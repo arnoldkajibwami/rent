@@ -7,7 +7,7 @@ import Contact from './Contact';
 import Login from './Login';
 import Admin from './Admin';
 import { CartProvider } from 'react-use-cart';
-import MoreItems from "./MoreItems";
+import Moreitems from "./Moreitems";
 import './App.css'
 
 
@@ -20,7 +20,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
-          <Route path="/items" element={<MoreItems />} />
+          <Route path="/items" element={<Moreitems />} />
           <Route path="/adminpage" element={<Admin />} />
           <Route path="about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
