@@ -32,10 +32,9 @@ const Header = () => {
               <NavLink to="/items">Houses</NavLink> 
               {/* will be display none  */}
             </li>
-            <li>
+            {/* <li>
               <NavLink to="/adminpage">Admin</NavLink> 
-              {/* will be display none  */}
-            </li>
+            </li> */}
             <li>
               <NavLink to="/about">About</NavLink>
             </li>

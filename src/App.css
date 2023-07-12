@@ -1,465 +1,551 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
-html{
-  font-family: 'Oswald', sans-serif !important;
- }
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+html {
+  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Oswald', sans-serif;
+  scroll-behavior: smooth;
+  overflow-x: hidden !important;
+}
+
 .admin {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    margin-top: 20px;
-  }
-  
-  .admincart .card {
-    width: 300px;
-    height: 300px
-  }
-  .HomePage{
-    text-decoration: none;
-    color: white !important;
-  }
-  .admincart .card_subtitle {
-    min-height: 10px !important;
-    /* max-height: 100px !important; */
-  }
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
 
-  .admin h6 {
-    font-size: 15px !important;
-  }
-  
-  .admin input {
-    font-size: 15px !important;
-  }
-  
-  .admin .itembox {
-    max-width: 300px;
-    min-width: 100px !important;
-  }
-  .itembox{
-    margin-bottom: 10px;
-  }
-  .priceLocation {
-    display: flex;
-    justify-content: center;
-    /* margin-right: 15px; */
-  }
-  
-  .priceLocation h6 {
-    font-size: 15px !important;
-  }
-  
-  .imagestyle {
-    height: 20vh;
-    width: 100%;
-  }
-  
-  .suppr {
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  input {
-    border: none;
-  }
-  
-  .priceLocation input {
-    width: 50px;
-  }
-  
-  .copydescription {
-    width: 100%;
-    min-height: 40px !important;
-    border: none;
-    color: black;
-    font-weight: 500;
-  }
-  
-  .copylocation {
-    width: 65px !important;
-    font-size: 15px !important;
-    font-weight: 500;
-  }
-  
-  .copynumber {
-    width: 30px !important;
-    font-size: 15px !important;
-    font-weight: 500;
-  }
-  
-  .buttoncard {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px !important;
-  }
+.admincart .card {
+  width: 300px;
+  height: 300px
+}
 
-  .breadcrumbHome:hover {
-    cursor: pointer;
-    color:white;
-  }
-  .breadcrumbHome {
-    text-decoration: none !important;
-  }
-  
-  .breadcrumbs {
-    padding: 140px 0 0px 0;
-    min-height: 25vh;
-    position: relative;
-    background-image: url("./images/house2.jpg"), linear-gradient(#4b4b4b, #776d6d);
-    background-blend-mode: overlay;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    /* z-index: -1; */
-  }
-  
-  .breadcrumbs:before {
-    content: "";
-    background-color: rgba(0, 0, 0, 0.6);
-    position: absolute;
-    inset: 0;
-  }
-  
-  .breadcrumbsall {
-    transform: translateY(-45px);
-  }
-  
-  .breadcrumbs h2 {
-    font-size: 46px;
-    font-weight: 500;
-    color: #fff;
-  }
-  
-  .breadcrumbs ol {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    padding: 0 0 10px 0;
-    margin: 0;
-    font-size: 16px;
-    font-weight: 600;
-  }
-  
-  .breadcrumbs ol a {
-    color: rgba(255, 255, 255, 0.8);
-    transition: 0.3s;
-  }
-  
-  .breadcrumbs ol a:hover {
-    text-decoration: underline;
-  }
-  
-  .breadcrumbs ol li+li {
-    padding-left: 10px;
-  }
-  
-  .breadcrumbs ol li+li::before {
-    display: inline-block;
-    padding-right: 10px;
-    color: #fff;
-    content: "/";
-  }
-  
+.HomePage {
+  text-decoration: none;
+  color: white !important;
+}
 
-  .admin {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    margin-top: 20px;
-  }
-  
-  .admincart .card {
-    width: 300px;
-    height: 300px
-  }
-  .HomePage{
-    text-decoration: none;
-    color: white !important;
-  }
-  .admincart .card_subtitle {
-    min-height: 10px !important;
-    /* max-height: 100px !important; */
-  }
-  
-  .admin h6 {
-    font-size: 15px !important;
-  }
-  
-  .admin input {
-    font-size: 15px !important;
-  }
-  
-  .admin .itembox {
-    max-width: 300px;
-    min-width: 100px !important;
-  }
-  .itembox{
-    margin-bottom: 10px;
-  }
-  .priceLocation {
-    display: flex;
-    justify-content: center;
-    /* margin-right: 15px; */
-  }
-  
-  .priceLocation h6 {
-    font-size: 15px !important;
-  }
-  
-  .imagestyle {
-    height: 20vh;
-    width: 100%;
-  }
-  
-  .suppr {
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  input {
-    border: none;
-  }
-  
-  .priceLocation input {
-    width: 50px;
-  }
-  
-  .copydescription {
-    width: 100%;
-    min-height: 40px !important;
-    border: none;
-    color: black;
-    font-weight: 500;
-  }
-  
-  .copylocation {
-    width: 65px !important;
-    font-size: 15px !important;
-    font-weight: 500;
-  }
-  
-  .copynumber {
-    width: 30px !important;
-    font-size: 15px !important;
-    font-weight: 500;
-  }
-  
-  .buttoncard {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px !important;
-  }
+.admincart .card_subtitle {
+  min-height: 10px !important;
+  /* max-height: 100px !important; */
+}
 
-  .card {
-    position: relative;
-    width: 250px;
-    height: 250px;
-    color: #2e2d31;
-    /* background: #131313; */
-    overflow: hidden;
-    border-radius: 20px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  
-  .buttoncards{
-    display: flex;
-    justify-content: center;
-  }
-  .temporary_text {
-    font-weight: bold;
-    font-size: 24px;
-    padding: 6px 12px;
-    color: #f8f8f8;
-  }
-  
-  .card_title {
-    font-weight: bold;
-  }
-  
-  .card_content {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    /* edit the width to fit card */
-    width: 100%;
-    padding: 20px;
-    background: #f2f2f2;
-    border-top-left-radius: 20px;
-    /* edit here to change the height of the content box */
-    transform: translateY(150px);
-    transition: transform .25s;
-  }
-  
-  .card_content::before {
-    content: '';
-    position: absolute;
-    top: -47px;
-    right: -45px;
-    width: 100px;
-    height: 100px;
-    transform: rotate(-175deg);
-    border-radius: 50%;
-    box-shadow: inset 48px 48px #f2f2f2;
-  }
-  
-  .card_title {
-    color: #131313;
-    line-height: 15px;
-  }
-  
-  .card_subtitle {
-    display: block;
-    font-size: 12px;
-    margin-bottom: 10px;
-  }
-  
-  .card_description {
-    font-size: 14px;
-    opacity: 0;
-    transition: opacity .5s;
-    /* min-height: 50px; */
-  }
-  
-  .card:hover .card_content {
-    transform: translateY(0);
-  }
-  
-  .card:hover .card_description {
-    opacity: 1;
-    transition-delay: .25s;
-  }
+.admin h6 {
+  font-size: 15px !important;
+}
 
-  
-  .about_section {
-    padding-bottom: 30px;
-    margin-top:40px ;
-  }
-  
-  .about_section_2 {
-    padding-top: 70px;
-    padding-bottom: 90px;
-  }
-  
-  .about_image {
-    width: 100%;
-    float: left;
-    padding-left: 22px;
-    padding-top: 37px;
-    object-fit: cover;
-  }
-  .about_image img{
-    width: 100%;
-  }
-  .about_taital {
-    width: 35%;
-    float: left;
-    font-size: 40px;
-    color: #0f0f0f;
-    font-weight: bold;
-  }
-  
-  .about_text {
-    width: 100%;
-    float: left;
-    font-size: 16px;
-    color: #0f0f0f;
-    margin: 0px;
-    font-weight: 500;
-  }
-  
-  .lorem_text {
-    width: 100%;
-    float: left;
-    font-size: 16px;
-    color: #0f0f0f;
-    margin: 0px;
-  }
-  
-  .about_taital_main {
-    width: 100%;
-    float: left;
-    padding-top: 95px;
-  }
-  
-  .breadcrumbHome:hover {
-    cursor: pointer;
-    color:white;
-  }
-  .breadcrumbHome {
-    text-decoration: none !important;
-  }
-  
-  .breadcrumbs {
-    padding: 140px 0 0px 0;
-    min-height: 25vh;
-    position: relative;
-    background-image: url("./images/house2.jpg"), linear-gradient(#4b4b4b, #776d6d);
-    background-blend-mode: overlay;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    /* z-index: -1; */
-  }
-  
-  .breadcrumbs:before {
-    content: "";
-    background-color: rgba(0, 0, 0, 0.6);
-    position: absolute;
-    inset: 0;
-  }
-  
-  .breadcrumbsall {
-    transform: translateY(-45px);
-  }
-  
-  .breadcrumbs h2 {
-    font-size: 46px;
-    font-weight: 500;
-    color: #fff;
-  }
-  
-  .breadcrumbs ol {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    padding: 0 0 10px 0;
-    margin: 0;
-    font-size: 16px;
-    font-weight: 600;
-  }
-  
-  .breadcrumbs ol a {
-    color: rgba(255, 255, 255, 0.8);
-    transition: 0.3s;
-  }
-  
-  .breadcrumbs ol a:hover {
-    text-decoration: underline;
-  }
-  
-  .breadcrumbs ol li+li {
-    padding-left: 10px;
-  }
-  
-  .pageli{
-    color: rgb(158, 158, 158);
-  }
+.admin input {
+  font-size: 15px !important;
+}
 
-  .breadcrumbs ol li+li::before {
-    display: inline-block;
-    padding-right: 10px;
-    color: #fff;
-    content: "/";
-  }
-  
-  .nav-links{
-    text-decoration: none;
-  }
-  
-  .adminlink{
-    text-decoration: none;
-    color: white !important;
-  }
-  
+.admin .itembox {
+  max-width: 300px;
+  min-width: 100px !important;
+}
+
+.itembox {
+  margin-bottom: 10px;
+}
+
+.priceLocation {
+  display: flex;
+  justify-content: center;
+  /* margin-right: 15px; */
+}
+
+.priceLocation h6 {
+  font-size: 15px !important;
+}
+
+.imagestyle {
+  height: 20vh;
+  width: 100%;
+}
+
+.suppr {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+input {
+  border: none;
+}
+
+.priceLocation input {
+  width: 50px;
+}
+
+.copydescription {
+  width: 100%;
+  min-height: 40px !important;
+  border: none;
+  color: black;
+  font-weight: 500;
+}
+
+.copylocation {
+  width: 65px !important;
+  font-size: 15px !important;
+  font-weight: 500;
+}
+
+.copynumber {
+  width: 30px !important;
+  font-size: 15px !important;
+  font-weight: 500;
+}
+
+.buttoncard {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px !important;
+}
+
+.breadcrumbHome:hover {
+  cursor: pointer;
+  color: white;
+}
+
+.breadcrumbHome {
+  text-decoration: none !important;
+}
+
+.breadcrumbs {
+  padding: 140px 0 0px 0;
+  min-height: 25vh;
+  position: relative;
+  background-image: url("./images/house2.jpg"), linear-gradient(#4b4b4b, #776d6d);
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* z-index: -1; */
+}
+
+.breadcrumbs:before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  inset: 0;
+}
+
+.breadcrumbsall {
+  transform: translateY(-45px);
+}
+
+.breadcrumbs h2 {
+  font-size: 46px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0 0 10px 0;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.breadcrumbs ol a {
+  color: rgba(255, 255, 255, 0.8);
+  transition: 0.3s;
+}
+
+.breadcrumbs ol a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumbs ol li+li {
+  padding-left: 10px;
+}
+
+.breadcrumbs ol li+li::before {
+  display: inline-block;
+  padding-right: 10px;
+  color: #fff;
+  content: "/";
+}
+
+
+.admin {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.admincart .card {
+  width: 300px;
+  height: 300px
+}
+
+.HomePage {
+  text-decoration: none;
+  color: white !important;
+}
+
+.admincart .card_subtitle {
+  min-height: 10px !important;
+  /* max-height: 100px !important; */
+}
+
+.admin h6 {
+  font-size: 15px !important;
+}
+
+.admin input {
+  font-size: 15px !important;
+}
+
+.admin .itembox {
+  max-width: 300px;
+  min-width: 100px !important;
+}
+
+.itembox {
+  margin-bottom: 10px;
+}
+
+.priceLocation {
+  display: flex;
+  justify-content: center;
+  /* margin-right: 15px; */
+}
+
+.priceLocation h6 {
+  font-size: 15px !important;
+}
+
+.imagestyle {
+  height: 20vh;
+  width: 100%;
+}
+
+.suppr {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+input {
+  border: none;
+}
+
+.priceLocation input {
+  width: 50px;
+}
+
+.copydescription {
+  width: 100%;
+  min-height: 40px !important;
+  border: none;
+  color: black;
+  font-weight: 500;
+}
+
+.copylocation {
+  width: 65px !important;
+  font-size: 15px !important;
+  font-weight: 500;
+}
+
+.copynumber {
+  width: 30px !important;
+  font-size: 15px !important;
+  font-weight: 500;
+}
+
+.buttoncard {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px !important;
+}
+
+.card {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  color: #2e2d31;
+  /* background: #131313; */
+  overflow: hidden;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.buttoncards {
+  display: flex;
+  justify-content: center;
+}
+
+.temporary_text {
+  font-weight: bold;
+  font-size: 24px;
+  padding: 6px 12px;
+  color: #f8f8f8;
+}
+
+.card_title {
+  font-weight: bold;
+}
+
+.card_content {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  /* edit the width to fit card */
+  width: 100%;
+  padding: 20px;
+  background: #f2f2f2;
+  border-top-left-radius: 20px;
+  /* edit here to change the height of the content box */
+  transform: translateY(150px);
+  transition: transform .25s;
+}
+
+.card_content::before {
+  content: '';
+  position: absolute;
+  top: -47px;
+  right: -45px;
+  width: 100px;
+  height: 100px;
+  transform: rotate(-175deg);
+  border-radius: 50%;
+  box-shadow: inset 48px 48px #f2f2f2;
+}
+
+.card_title {
+  color: #131313;
+  line-height: 15px;
+}
+
+.card_subtitle {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.card_description {
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity .5s;
+  /* min-height: 50px; */
+}
+
+.card:hover .card_content {
+  transform: translateY(0);
+}
+
+.card:hover .card_description {
+  opacity: 1;
+  transition-delay: .25s;
+}
+
+
+.about_section {
+  padding-bottom: 30px;
+  margin-top: 40px;
+}
+
+.about_section_2 {
+  padding-top: 70px;
+  padding-bottom: 90px;
+}
+
+.about_image {
+  width: 100%;
+  float: left;
+  padding-left: 22px;
+  padding-top: 37px;
+  object-fit: cover;
+}
+
+.about_image img {
+  width: 100%;
+}
+
+.about_taital {
+  width: 35%;
+  float: left;
+  font-size: 40px;
+  color: #0f0f0f;
+  font-weight: bold;
+}
+
+.about_text {
+  width: 100%;
+  float: left;
+  font-size: 16px;
+  color: #0f0f0f;
+  margin: 0px;
+  font-weight: 500;
+}
+
+.lorem_text {
+  width: 100%;
+  float: left;
+  font-size: 16px;
+  color: #0f0f0f;
+  margin: 0px;
+}
+
+.about_taital_main {
+  width: 100%;
+  float: left;
+  padding-top: 95px;
+}
+
+.breadcrumbHome:hover {
+  cursor: pointer;
+  color: white;
+}
+
+.breadcrumbHome {
+  text-decoration: none !important;
+}
+
+.breadcrumbs {
+  padding: 140px 0 0px 0;
+  min-height: 25vh;
+  position: relative;
+  background-image: url("./images/house2.jpg"), linear-gradient(#4b4b4b, #776d6d);
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* z-index: -1; */
+}
+
+.breadcrumbs:before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  inset: 0;
+}
+
+.breadcrumbsall {
+  transform: translateY(-45px);
+}
+
+.breadcrumbs h2 {
+  font-size: 46px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0 0 10px 0;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.breadcrumbs ol a {
+  color: rgba(255, 255, 255, 0.8);
+  transition: 0.3s;
+}
+
+.breadcrumbs ol a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumbs ol li+li {
+  padding-left: 10px;
+}
+
+.pageli {
+  color: rgb(158, 158, 158);
+}
+
+.breadcrumbs ol li+li::before {
+  display: inline-block;
+  padding-right: 10px;
+  color: #fff;
+  content: "/";
+}
+
+.nav-links {
+  text-decoration: none;
+}
+
+.adminlink {
+  text-decoration: none;
+  color: white !important;
+}
+
+.buttonapp {
+  height: 50px;
+  margin: 5px;
+  width: 120px;
+  background: #333;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: Consolas, Courier New, monospace;
+  border: solid #404C5D 1px;
+  font-size: 16px;
+  color: rgb(161, 161, 161);
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  border-radius: 5px;
+  background: linear-gradient(145deg, #2e2d2d, #212121);
+  -webkit-box-shadow: -1px -5px 15px #41465B,
+    5px 5px 15px #41465B,
+    inset 5px 5px 10px #212121,
+    inset -5px -5px 10px #212121;
+  box-shadow: -1px -5px 15px #41465B,
+    5px 5px 15px #41465B,
+    inset 3px 3px 10px #212121,
+    inset -5px -5px 10px #212121;
+}
+
+.buttonapp:hover {
+  -webkit-box-shadow: 1px 1px 13px #20232e,
+    -1px -1px 13px #545b78;
+  box-shadow: 1px 1px 13px #20232e,
+    -1px -1px 13px #545b78;
+  color: #d6d6d6;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+.buttonapp:active {
+  -webkit-box-shadow: 1px 1px 13px #20232e,
+    -1px -1px 33px #545b78;
+  box-shadow: 1px 1px 13px #20232e,
+    -1px -1px 33px #545b78;
+  color: #d6d6d6;
+  -webkit-transition: 100ms;
+  transition: 100ms;
+}
+.buttonapps {
+  color: #090909;
+  padding: 0.7em 1.7em;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background: #e8e8e8;
+  border: 1px solid #e8e8e8;
+  transition: all .3s;
+  box-shadow: 6px 6px 12px #c5c5c5,
+             -6px -6px 12px #ffffff;
+}
+
+.buttonapps:hover {
+  border: 1px solid white;
+}
+
+.buttonapps:active {
+  box-shadow: 4px 4px 12px #c5c5c5,
+             -4px -4px 12px #ffffff;
+}

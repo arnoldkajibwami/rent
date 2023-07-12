@@ -17,7 +17,7 @@ export default function Admin(props) {
                 <h5>Items: ({totalUniqueItems})</h5>
                    </div>
             <div className="container text-center">
-                 <button onClick={addItems} className="btn btn-primary">Add Items</button>
+                 <button onClick={addItems} className="buttonapp">Add Items</button>
             </div>
         </>
 

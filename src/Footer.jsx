@@ -19,7 +19,7 @@ export default function Footer() {
 
                             <div className="col-lg-4 col-md-6">
                                 <div className="footer-info">
-                                    <NavLink style={{color:"white", textDecoration:"none"}} to="/adminpage"><h3>Rent</h3></NavLink>
+                                    <NavLink style={{ color: "white", textDecoration: "none" }} to="/login"><h3>Rent</h3></NavLink>
                                     <p>
                                         Bukavu <br />
                                         Sud-kivu /RDC<br /><br />
@@ -48,12 +48,28 @@ export default function Footer() {
                 </div>
                 <div className="footer-legal text-center position-relative">
                     <div className="container">
-                        <div onClick={BackToTOP} className="m-3 backtotop">Up</div>
+                        <div onClick={BackToTOP} className="m-3 backtotop">
+                            <button className="buttonfooter">
+                                <div class="text">
+                                    <span>Back</span>
+                                    <span>to</span>
+                                    <span>top</span>
+                                </div>
+                                <div class="clone">
+                                    <span>Back</span>
+                                    <span>to</span>
+                                    <span>top</span>
+                                </div>
+                                <svg width="20px" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                </svg>
+                            </button>
+                        </div>
                         <div className="copyright">
-                            &copy; Copyright <strong><span><NavLink style={{color:"skyblue", textDecoration:"none"}} to="www.rent.netlify.app" className="Madename">AuctuxRent</NavLink></span></strong>. All Rights Reserved
+                            &copy; Copyright <strong><span><NavLink style={{ color: "skyblue", textDecoration: "none" }} to="www.rent.netlify.app" className="Madename">AuctuxRent</NavLink></span></strong>. All Rights Reserved
                         </div>
                         <div className="credits">
-                            Made by <NavLink to="https://auctux.com/" style={{color:"skyblue", textDecoration:"none",fontWeight:"bold"}}  className="Madename">Auctux</NavLink>
+                            Made by <NavLink to="https://auctux.com/" style={{ color: "skyblue", textDecoration: "none", fontWeight: "bold" }} className="Madename">Auctux</NavLink>
                         </div>
                     </div>
                 </div>
