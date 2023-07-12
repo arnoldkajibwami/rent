@@ -9,7 +9,6 @@ export default function Items(props) {
 
   return (
     <>
-            {/* <Breadcrumb page={"House"} /> */}
       <div className="container itembox card" style={{backgroundImage: `url(${props.image})`}}>
         <div class="card_content">
           <span class="card_subtitle text-center">

@@ -3,7 +3,7 @@ import Data from "./Data";
 import Items from "./items";
 
 
-const DataItems = () => {
+const Dataitems = () => {
     return (
         <>
             <div className="admin">
@@ -32,4 +32,4 @@ const DataItems = () => {
     )
 }
 
-export default DataItems;
+export default Dataitems;

@@ -4,13 +4,14 @@
 .navbar {
   height: 60px;
   /* background-color: white ; */
-  position: absolute;
+  position: fixed;
   z-index: 1;
   width: 100%;
 
 }
 .logo h4{
-  color:#ffffff
+  color:#ffffff;
+  z-index:1;
 }
 /* .Navcontainer {
   max-width: 1100px;
@@ -101,15 +102,27 @@
     .menu-icon {
       display: block;
       cursor: pointer;
+      z-index: 1;
     }
   
     .nav-elements {
-      position: absolute;
+      position: fixed;
       right: 0;
-      top: 60px;
-      background-color:black;
+      /* left: 0; */
+      /* top: 40px; */
+      top :0 !important;
+      transform: translateY(-10px);
+      /* background-color:black; */
+      /* transform: translateY(480px); */
+      background: rgb(37, 37, 37);
+      /* background: transparent; */
+      backdrop-filter: blur(20px);
+      /* box-shadow: 0 5px 15px blue; */
+      border-radius: 8px;
       width: 0px;
-      height: calc(100vh - 60px);
+      /* height: calc(100vh - 42px); */
+      height: 101vh;
+      padding-top: 50px;
       transition: all 0.4s ease-in-out;
       overflow: hidden;
     }
@@ -130,3 +143,19 @@
   }
  
 /* End Navbar */
+
+.menu-icon span {
+  display: block;
+  background-color: white;
+  height: 3px;
+  width: 25px;
+  position: relative;
+  left: 0;
+  opacity: 1;
+  transition: all 0.35s ease-out;
+  margin:7px;
+  transform-origin: center left;
+}
+#spanleft{
+transform: translate(-5px);
+}

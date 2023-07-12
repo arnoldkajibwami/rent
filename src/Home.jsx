@@ -1,12 +1,9 @@
 import React from "react";
 import Cartitems from "./Cartitems";
-import Image1 from './images/house1.jpg'
-import Image2 from './images/house2.jpg'
-import Image3 from './images/house3.jpg'
-import Image4 from './images/house4.jpg'
 import './home.css'
-import About from "./About";
 import Aboutcomponent from "./Aboutcomponent";
+import { NavLink } from "react-router-dom";
+import ContactContainer from "./contactcontainer";
 
 export default function Home() {
     return (
@@ -26,11 +23,15 @@ export default function Home() {
                 </div>
             </section>
             <section className="contentservice">
-                <Cartitems />
-                <Aboutcomponent/>
-            <section className=" container">
-                <h1>search some card idea for houses in home page tomorrow and it will be the one for all items (houses)</h1>
-            </section>
+                <Aboutcomponent />
+                <div className="container">
+                    <h2 className="text-center mb-5">Some of how houses</h2>
+                    <Cartitems />
+                    <NavLink to="/items"><button className="btn btn-success" style={{ float: "right", right: "100px" }}>More</button></NavLink>
+                </div>
+                <div style={{marginTop:"100px",marginBottom:"100px"}}>
+                    <ContactContainer />
+                </div>
             </section>
         </>
     );

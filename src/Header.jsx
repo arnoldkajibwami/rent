@@ -18,7 +18,10 @@ const Header = () => {
           <h4>Auctux</h4>
         </div>
         <div className="menu-icon" onClick={handleShowNavbar}>
-          <button className='btn btn-danger'>Back</button>
+          {/* <button className='btn btn-danger'>Back</button> */}
+          <span> </span>
+            <span id="spanleft"></span>
+            <span> </span>
         </div>
         <div className= {`mt-2 nav-elements  ${showNavbar && 'active'}`}>
           <ul>
