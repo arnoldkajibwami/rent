@@ -9,7 +9,7 @@ export default function Items(props) {
 
   return (
     <>
-      <div className="container itembox card" style={{backgroundImage: `url(${props.image})`}}>
+      <div className="container itembox cards" style={{backgroundImage: `url(${props.image})`}}>
         <div class="card_content">
           <span class="card_subtitle text-center">
               <h6>{props.description}</h6>

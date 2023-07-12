@@ -2,7 +2,7 @@ import { useCart } from "react-use-cart"
 import Breadcrumb from "./Breadcrumb"
 
 export default function Cartitems() {
-    function addItems(){
+    function addItems() {
         alert("open www.auctux.com")
     }
     const {
@@ -16,25 +16,26 @@ export default function Cartitems() {
 
     return (
         <section>
-             <div className="admincart admin container">
+            <div className="admincart admin container">
 
                 {items.map((item) => {
                     return (
-                              <div key={item.id} className="container itembox card mb-5" style={{ backgroundImage: `url(${item.image})` }}>
-                            <div class="card_content">
-                                <span class="card_subtitle ">
-                                    <h6>{item.description}</h6>
-                                </span>
-                                <div className="card_description text-center">
-                                    <h6 >{item.location}</h6>
-                                    <h6>{item.price}</h6>
-                                    <h6>Made By: {item.by}</h6>
+                        <div key={item.id} className=" card mt-4" style={{ width: "18rem" }}>
+                            <img class="card-img-top" src={item.image} alt="Card image cap" />
+
+                            <div class="card-body">
+
+                                <div className="card-title">
+                                    <h5 >{item.location}</h5>
+                                    <h5 >{item.price}</h5>
                                 </div>
+                                <p className="card-text">{item.description}</p>
+
                                 <div className="buttoncard buttoncards ">
-                                    <button className="btn btn-success"
+                                    <button className="btn btn-primary"
                                         onClick={() => addItems(item.item)}>Rent your house</button>
                                 </div>
-                                     </div>
+                            </div>
                         </div>
                     )
                 })}

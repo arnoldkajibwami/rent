@@ -50,8 +50,11 @@ function Login() {
                     <a rel="noopener noreferrer" href="#" class="">Sign up</a>
                 </p> */}
             </div>
-            <div></div>
+            <div className="m-5">
+            </div>
+            
         </section>
+    
         </>
     );
 }

@@ -14,7 +14,7 @@ html {
   margin-top: 20px;
 }
 
-.admincart .card {
+.admincart .cards {
   width: 300px;
   height: 300px
 }
@@ -177,7 +177,7 @@ input {
   margin-top: 20px;
 }
 
-.admincart .card {
+.admincart .cards {
   width: 300px;
   height: 300px
 }
@@ -264,7 +264,7 @@ input {
   margin-bottom: 20px !important;
 }
 
-.card {
+.cards {
   position: relative;
   width: 250px;
   height: 250px;
@@ -277,10 +277,7 @@ input {
   background-repeat: no-repeat;
 }
 
-.buttoncards {
-  display: flex;
-  justify-content: center;
-}
+
 
 .temporary_text {
   font-weight: bold;
@@ -297,7 +294,7 @@ input {
   position: absolute;
   left: 0;
   bottom: 0;
-  /* edit the width to fit card */
+  /* edit the width to fit cards */
   width: 100%;
   padding: 20px;
   background: #f2f2f2;
@@ -337,11 +334,11 @@ input {
   /* min-height: 50px; */
 }
 
-.card:hover .card_content {
+.cards:hover .card_content {
   transform: translateY(0);
 }
 
-.card:hover .card_description {
+.cards:hover .card_description {
   opacity: 1;
   transition-delay: .25s;
 }
@@ -549,3 +546,139 @@ input {
   box-shadow: 4px 4px 12px #c5c5c5,
              -4px -4px 12px #ffffff;
 }
+
+.ReactModal__Content{
+  width: 100%;
+  position: absolute;
+  top: 13vh;
+  text-align: center;
+  height: 40vh;
+  /* background-color: red !important; */
+  z-index: 2 !important;
+  margin-left: 33%;
+  z-index: 1;
+}
+.closebutton{
+  width: 40px;
+  text-align: center;
+  background-color: red;
+  color: white;
+  z-index:2 !important;
+  
+}
+@media (max-width: 840px) {
+  .ReactModal__Content{
+    margin-left: 25% !important;
+  }
+}
+@media (max-width: 600px) {
+  .ReactModal__Content{
+    margin-left: 17% !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .ReactModal__Content{
+    margin-left: 5% !important;
+  }
+}
+.closebtn{
+  justify-content: center !important;
+}
+.cards {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+}
+
+.titles {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.forms {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.group {
+  position: relative;
+}
+
+.forms .group label {
+  font-size: 14px;
+  color: rgb(99, 102, 102);
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  background-color: #fff;
+  transition: all .3s ease;
+}
+
+.forms .group input,
+.forms .group textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  outline: 0;
+  width: 100%;
+  background-color: transparent;
+}
+
+.forms .group input:placeholder-shown+ label, .forms .group textarea:placeholder-shown +label {
+  top: 10px;
+  background-color: transparent;
+}
+
+.forms .group input:focus,
+.forms .group textarea:focus {
+  border-color: #3366cc;
+}
+
+.forms .group input:focus+ label, .forms .group textarea:focus +label {
+  top: -10px;
+  left: 10px;
+  background-color: #fff;
+  color: #3366cc;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.forms .group textarea {
+  resize: none;
+  height: 100px;
+}
+
+.forms button {
+  background-color: #3366cc;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.forms button:hover {
+  background-color: #27408b;
+}
+
+
+.card-img-top{
+  height: 30vh !important;
+  object-fit: cover !important;
+  object-position: center;
+}
+.card-title{
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+}
+

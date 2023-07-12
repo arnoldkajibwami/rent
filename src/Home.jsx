@@ -32,6 +32,7 @@ export default function Home() {
                 <div style={{marginTop:"100px",marginBottom:"100px"}}>
                     <Contactcontent/>
                 </div>
+
             </section>
         </>
     );
