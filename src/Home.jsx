@@ -27,7 +27,7 @@ export default function Home() {
                 <div className="container">
                     <h2 className="text-center mb-5">Some of how houses</h2>
                     <Cartitems />
-                    <NavLink to="/items"><button className="buttonapps" style={{ float: "right", right: "100px" }}>More</button></NavLink>
+                    <NavLink to="/items"><button className="buttonapps mt-5" style={{ float: "right", right: "100px" }}>More</button></NavLink>
                 </div>
                 <div style={{marginTop:"100px",marginBottom:"100px"}}>
                     <Contactcontent/>
