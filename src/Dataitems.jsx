@@ -1,12 +1,12 @@
 import React from "react";
-import Data from "./Data";
-import Items from "./items";
+// import Data from "./Data";
+// import Items from "./items";
 
 
 const Dataitems = () => {
     return (
         <>
-            <div className="admin">
+            {/* <div className="admin">
                 {Data.map((item, index) => {
                     return (
                         <>
@@ -26,7 +26,7 @@ const Dataitems = () => {
                     )
                 })}
 
-            </div>
+            </div> */}
 
         </>
     )
