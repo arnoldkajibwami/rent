@@ -1,6 +1,6 @@
 import React from "react";
 import Data from "./Data";
-import Items from "./items";
+import Items from "./Items";
 
 
 const Dataitems = () => {
