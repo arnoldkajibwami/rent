@@ -3,7 +3,7 @@ import Cartitems from "./Cartitems";
 import './home.css'
 import Aboutcomponent from "./Aboutcomponent";
 import { NavLink } from "react-router-dom";
-// import Contactcontainer from "./contactcontainer";
+import Contactcontainer from "./contactcontainer";
 
 export default function Home() {
     return (
@@ -30,7 +30,7 @@ export default function Home() {
                     <NavLink to="/items"><button className="btn btn-success" style={{ float: "right", right: "100px" }}>More</button></NavLink>
                 </div>
                 <div style={{marginTop:"100px",marginBottom:"100px"}}>
-                    {/* <Contactcontainer /> */}
+                    <Contactcontainer />
                 </div>
             </section>
         </>
