@@ -2,7 +2,7 @@ import React from "react";
 import ImageContact from "./images/house3.jpg"
 import './contact.css'
 
-export default function Contactcontainer() {
+export default function Contactcontent() {
   return (
     <>
       <section id="contact" className="mt-5 contact">
