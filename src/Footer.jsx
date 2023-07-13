@@ -1,6 +1,10 @@
 import React from "react";
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink, useNavigate,Link } from "react-router-dom";
 import "./footer.css"
+import { BiLogoInstagram } from "react-icons/bi"
+import { BiLogoFacebook } from "react-icons/bi"
+import { BiLogoTwitter } from "react-icons/bi"
+import { BiLogoLinkedin } from "react-icons/bi"
 
 export default function Footer() {
     const navigate = useNavigate()
@@ -27,20 +31,20 @@ export default function Footer() {
                                         <strong>Email:</strong> renthouse@gmail.com<br />
                                     </p>
                                     <div className="social-links d-flex mt-3">
-                                        <NavLink href="#" className="d-flex align-items-center justify-content-center"><i className="bi bi-twitter"></i></NavLink>
-                                        <NavLink href="#" className="d-flex align-items-center justify-content-center"><i className="bi bi-facebook"></i></NavLink>
-                                        <NavLink href="#" className="d-flex align-items-center justify-content-center"><i className="bi bi-instagram"></i></NavLink>
-                                        <NavLink href="#" className="d-flex align-items-center justify-content-center"><i className="bi bi-linkedin"></i></NavLink>
+                                        <Link href="#" className="d-flex align-items-center justify-content-center"><i><BiLogoFacebook/></i></Link>
+                                        <Link href="#" className="d-flex align-items-center justify-content-center"><i><BiLogoInstagram/></i></Link>
+                                        <Link href="#" className="d-flex align-items-center justify-content-center"><i><BiLogoTwitter/></i></Link>
+                                        <Link href="#" className="d-flex align-items-center justify-content-center"><i><BiLogoLinkedin/></i></Link>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-2 col-md-3 footer-links">
                                 <h4>Links</h4>
                                 <ul>
-                                    <li><NavLink to="/home " className="nav-links"> Home</NavLink></li>
-                                    <li><NavLink to="/about " className="nav-links"> About</NavLink></li>
-                                    <li><NavLink to="/items " className="nav-links"> Houses</NavLink></li>
-                                    <li><NavLink to="/contact " className="nav-links"> Contact</NavLink></li>
+                                    <li><NavLink to="/home"  onClick={BackToTOP} className="nav-links"> Home</NavLink></li>
+                                    <li><NavLink to="/about"  onClick={BackToTOP} className="nav-links"> About</NavLink></li>
+                                    <li><NavLink to="/items"  onClick={BackToTOP} className="nav-links"> Houses</NavLink></li>
+                                    <li><NavLink to="/contact"  onClick={BackToTOP} className="nav-links"> Contact</NavLink></li>
                                 </ul>
                             </div>
                         </div>
