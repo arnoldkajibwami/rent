@@ -16,7 +16,7 @@ export default function Cartitems() {
 
     return (
         <section>
-            {/* <div className="admincart admin container">
+            <div className="admincart admin container">
 
                 {items.map((item) => {
                     return (
@@ -39,7 +39,7 @@ export default function Cartitems() {
                         </div>
                     )
                 })}
-            </div> */}
+            </div>
         </section>
     )
 };
