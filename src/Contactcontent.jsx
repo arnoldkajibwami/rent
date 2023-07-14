@@ -50,7 +50,7 @@ export default function Contactcontent() {
                     <input type="text" name="name" className="form-control" id="name" placeholder="Your Name" required />
                   </div>
                   <div className="col-lg-6 form-group">
-                    <input type="email" className="form-control" name="email" id="email" placeholder="Your Email" required />
+                    <input type="mail" className="form-control" name="mail" id="email" placeholder="Your Email" required />
                   </div>
                 </div>
                 <div className="form-group">
