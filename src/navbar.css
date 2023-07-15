@@ -2,13 +2,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 .navbar {
+  background-color: transparent;
+}
+
+.navbar.colorChange {
+  background-color:  rgb(37, 37, 37);
+  transition: 0.3s ease-in-out ;
+}
+.navbar {
   height: 60px;
-  /* background-color: white ; */
   position: absolute;
   z-index: 1;
   width: 100%;
-
 }
+
 .logo h4{
   color:#ffffff;
   z-index:1;

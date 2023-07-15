@@ -5,7 +5,7 @@ import './contact.css'
 export default function Contactcontent() {
   return (
     <>
-      <section id="contact" className="mt-5 contact">
+      <section id="contact" className="mt-3 contact">
 
         <div className="container mt-5" data-aos="fade-up" data-aos-delay="100">
           <h3 className="text-center mb-5">Stay In Touch we Us</h3>

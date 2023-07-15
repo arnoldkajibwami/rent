@@ -25,9 +25,13 @@ export default function Home() {
             <section className="contentservice">
                 <Aboutcomponent />
                 <div className="container">
-                    <h2 className="text-center mb-5">Some of how houses</h2>
+                    <h2 className="text-center mb-2">Some of how houses</h2>
                     <Cartitems />
-                    <NavLink to="/items"><button className="buttonapps mt-2" style={{ textAlign: "center"}}>More</button></NavLink>
+                <div className="btnbuttonhome">
+                    <div></div>
+                    <NavLink to="/items"><button className="buttonapps mt-3" style={{ textAlign: "center"}}>More</button></NavLink>
+                    <div></div>
+                </div>
                 </div>
                 <div style={{marginTop:"100px",marginBottom:"100px"}}>
                     <Contactcontent/>

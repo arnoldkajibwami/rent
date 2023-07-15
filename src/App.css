@@ -396,7 +396,23 @@ input {
   float: left;
   padding-top: 95px;
 }
-
+@media (max-width:600px){
+  .about_section_2{
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+  .about_taital_main{
+    padding-top: 30px;
+  }
+  .about_image{
+    margin-left: -12px;
+  }
+}
+.btnbuttonhome{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 .breadcrumbHome:hover {
   cursor: pointer;
   color: white;
@@ -682,3 +698,7 @@ input {
   font-size: 20px;
 }
 
+
+#login-error-msg-holder{
+  display: none;
+}

@@ -1,11 +1,19 @@
+.logincontent{
+  position: relative;
+  top: 11vh;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 .form-container {
-    width: 320px;
-    border-radius: 0.75rem;
-    background-color: rgba(17, 24, 39, 1);
-    padding: 2rem;
-    color: rgba(243, 244, 246, 1);
-  }
-  
+  margin-bottom: 200px;
+  width: 320px;
+  border-radius: 0.75rem;
+  background-color: rgba(17, 24, 39, 1);
+  padding: 2rem;
+  color: rgba(243, 244, 246, 1);
+}
   .title {
     text-align: center;
     font-size: 1.5rem;
@@ -119,10 +127,4 @@
     line-height: 1rem;
     color: rgba(156, 163, 175, 1);
   }
-  
-  .logincontent{
-    display: flex;
-    justify-content: center;
-    margin-top: 100px;
-    margin-bottom: 150px;
-  }
+ 
