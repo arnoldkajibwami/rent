@@ -10,6 +10,7 @@ export default function Admin(props) {
     function addItems() {
         alert("Open www.auctux.com")
     }
+
     const [isOpen, setIsOpen] = useState(false);
     return (
         <>

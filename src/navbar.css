@@ -1,17 +1,14 @@
 /* Navbar */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
+.navbar.colorChange {
+  background-color:  rgb(37, 37, 37) !important;
+  transition: 0.3s ease-in-out !important;
+}
 .navbar {
   background-color: transparent;
-}
-
-.navbar.colorChange {
-  background-color:  rgb(37, 37, 37);
-  transition: 0.3s ease-in-out ;
-}
-.navbar {
   height: 60px;
-  position: absolute;
+  position: fixed;
   z-index: 1;
   width: 100%;
 }

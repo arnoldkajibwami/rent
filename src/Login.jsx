@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useRef, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import './login.css'
 
 function Login() {
@@ -26,8 +27,9 @@ function Login() {
 
         buttonbnt.addEventListener("click", () => {
             if (username.value === "admin@gmail.com" && password.value === "12345") {
+
                 alert("You have successfully logged in.");
-                location.assign("./adminpage")
+                location.replace("./adminpage")
             }
             else {
                 alert("wrong password try again");
