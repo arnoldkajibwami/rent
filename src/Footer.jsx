@@ -70,7 +70,7 @@ export default function Footer() {
                             </button>
                         </div>
                         <div className="copyright">
-                            &copy; Copyright <strong><span><NavLink style={{ color: "skyblue", textDecoration: "none" }} to="www.rent.netlify.app" className="Madename">AuctuxRent</NavLink></span></strong>. All Rights Reserved
+                            &copy; Copyright <strong><span><NavLink style={{ color: "skyblue", textDecoration: "none" }} to="/adminpage" onClick={BackToTOP} className="Madename">AuctuxRent</NavLink></span></strong>. All Rights Reserved
                         </div>
                         <div className="credits">
                             Made by <NavLink to="https://auctux.com/" style={{ color: "skyblue", textDecoration: "none", fontWeight: "bold" }} className="Madename">Auctux</NavLink>
