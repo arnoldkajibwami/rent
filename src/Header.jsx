@@ -9,20 +9,20 @@ const Header = () => {
     setShowNavbar(!showNavbar)
   }
 
-    const [colorChange, setColorchange] = useState(false);
-    const changeNavbarColor = () => {
-      if (window.scrollY >= 100) {
-        setColorchange(true);
-      }
-      else {
-        setColorchange(false);
-      }
-    };
-    window.addEventListener('scroll', changeNavbarColor);
+  const [colorChange, setColorchange] = useState(false);
+  const changeNavbarColor = () => {
+    if (window.scrollY >= 100) {
+      setColorchange(true);
+    }
+    else {
+      setColorchange(false);
+    }
+  };
+  window.addEventListener('scroll', changeNavbarColor);
 
-    return (
-      <Fragment>
-        
+  return (
+    <Fragment>  
+
       <nav className={colorChange ? 'navbar colorChange' : 'navbar'}>
         <div className="Navcontainer container">
           <div className="logo">
@@ -56,8 +56,8 @@ const Header = () => {
           </div>
         </div>
       </nav>
-      </Fragment>
-    )
-  }
+    </Fragment>
+  )
+}
 
-  export default Header
+export default Header
