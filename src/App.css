@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Oleo+Script:wght@400;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Oswald:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap');
 
 html {
-  font-family: 'Noto Sans', sans-serif;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Roboto', sans-serif;
   scroll-behavior: smooth;
   overflow-x: hidden !important;
 }
@@ -368,8 +367,8 @@ input {
   border-radius: 20px;
 }
 
-.about_image img:hover{
-  transform:rotate(2deg)
+.about_image img:hover {
+  transform: rotate(2deg)
 }
 
 .about_taital {
@@ -405,11 +404,12 @@ input {
   padding-left: 50px;
 }
 
-@media(max-width:600px){
-  .about_taital_main{
+@media(max-width:600px) {
+  .about_taital_main {
     padding-left: 10px;
   }
 }
+
 /* .img-fluid{
   border-radius: 259px;
   width: 150px;
@@ -418,23 +418,27 @@ input {
   object-position: center;
   text-align: center;
 } */
-@media (max-width:600px){
-  .about_section_2{
+@media (max-width:600px) {
+  .about_section_2 {
     padding-top: 10px !important;
     padding-bottom: 10px !important;
   }
-  .about_taital_main{
+
+  .about_taital_main {
     padding-top: 30px;
   }
-  .about_image{
+
+  .about_image {
     margin-left: -12px;
   }
 }
-.btnbuttonhome{
+
+.btnbuttonhome {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
+
 .breadcrumbHome:hover {
   cursor: pointer;
   color: white;
@@ -564,6 +568,7 @@ input {
   -webkit-transition: 100ms;
   transition: 100ms;
 }
+
 .buttonapps {
   color: #090909;
   padding: 0.7em 1.7em;
@@ -573,7 +578,7 @@ input {
   border: 1px solid #e8e8e8;
   transition: all .3s;
   box-shadow: 6px 6px 12px #c5c5c5,
-             -6px -6px 12px #ffffff;
+    -6px -6px 12px #ffffff;
 }
 
 .buttonapps:hover {
@@ -582,10 +587,10 @@ input {
 
 .buttonapps:active {
   box-shadow: 4px 4px 12px #c5c5c5,
-             -4px -4px 12px #ffffff;
+    -4px -4px 12px #ffffff;
 }
 
-.ReactModal__Content{
+.ReactModal__Content {
   width: 100%;
   position: absolute;
   top: 13vh;
@@ -596,33 +601,38 @@ input {
   margin-left: 33%;
   z-index: 1;
 }
-.closebutton{
+
+.closebutton {
   width: 40px;
   text-align: center;
   background-color: red;
   color: white;
-  z-index:2 !important;
-  
+  z-index: 2 !important;
+
 }
+
 @media (max-width: 840px) {
-  .ReactModal__Content{
+  .ReactModal__Content {
     margin-left: 25% !important;
   }
 }
+
 @media (max-width: 600px) {
-  .ReactModal__Content{
+  .ReactModal__Content {
     margin-left: 17% !important;
   }
 }
 
 @media (max-width: 450px) {
-  .ReactModal__Content{
+  .ReactModal__Content {
     margin-left: 5% !important;
   }
 }
-.closebtn{
+
+.closebtn {
   justify-content: center !important;
 }
+
 .cards {
   background-color: #fff;
   border-radius: 10px;
@@ -669,7 +679,8 @@ input {
   background-color: transparent;
 }
 
-.forms .group input:placeholder-shown+ label, .forms .group textarea:placeholder-shown +label {
+.forms .group input:placeholder-shown+label,
+.forms .group textarea:placeholder-shown+label {
   top: 10px;
   background-color: transparent;
 }
@@ -679,7 +690,8 @@ input {
   border-color: #3366cc;
 }
 
-.forms .group input:focus+ label, .forms .group textarea:focus +label {
+.forms .group input:focus+label,
+.forms .group textarea:focus+label {
   top: -10px;
   left: 10px;
   background-color: #fff;
@@ -709,18 +721,19 @@ input {
 }
 
 
-.card-img-top{
+.card-img-top {
   height: 30vh !important;
   object-fit: cover !important;
   object-position: center;
 }
-.card-title{
+
+.card-title {
   display: flex;
   justify-content: space-between;
   font-size: 20px;
 }
 
 
-#login-error-msg-holder{
+#login-error-msg-holder {
   display: none;
 }

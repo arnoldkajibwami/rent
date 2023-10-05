@@ -7,10 +7,9 @@ import Contact from './Contact';
 import Login from './Login';
 import Admin from './Admin';
 import { CartProvider } from 'react-use-cart';
-
 import './App.css'
-import Moreitems from "./Moreitems"
 import ItemsDetails from "./ItemsDetail";
+import Moreitems from "./Moreitems";
 
 
 function App() {
