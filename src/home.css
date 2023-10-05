@@ -8,7 +8,9 @@
     background-color: transparent;
     position: absolute;
     top:calc(80vh - 55vh);
-    width: 80%;
+    width: 60%;
+    margin-left: 70px;
+
 }
 .hometext{
     color: rgb(247, 247, 247);
@@ -17,9 +19,9 @@
     font-weight: 900;
 }
 .hometext h1{
-    font-size: 40px;
+    font-size: 20px;
     font-style: italic;
-    width: 60%;
+    width: 50%;
 }
 .homebutton{
     margin-top: 10px;

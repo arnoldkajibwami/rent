@@ -1,0 +1,128 @@
+.mains{
+  height: 800px;
+}
+.mains li{
+	display: inline-block;
+}
+@media (max-width:670px){
+	.mains label h6{
+		font-size: 12px;
+	}
+}
+.contents{
+	position: absolute;
+  left: 0;
+  transform: translate(35%);
+	display: none;	
+}
+
+.mains [id^="label"]:checked~.contents{
+	display: block;
+}
+.mains input[type="radio"]{
+	display: none;
+}
+.mains label{
+	padding:  10px;
+}
+.mains input[type="radioo"]{
+	display: none;
+}
+
+.mains [id^="label"]:checked + label{
+	background-color: #8cdeff;
+	color: white;
+
+}
+
+.mainsDrink [id^="label"]:checked~.contents{
+	display: block;
+}
+.mainsDrink input[type="radio"]{
+	display: none;
+}
+.mainsDrink label{
+	padding:  10px;
+}
+.mainsDrink input[type="radioo"]{
+	display: none;
+}
+
+.mainsDrink [id^="label"]:checked + label{
+	background-color: #8cdeff;
+	color: white;
+}
+
+/*Test Carausel*/
+
+.buttontest {
+  transition: 0.5s linear;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  padding: 15px;
+  margin: 0 5p x;
+  width: 100px;
+  margin-top: 10px;
+  border: none !important;
+  border-right: 1px solid #8cdeff !important;
+  border-bottom: 5px solid #8cdeff !important;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.buttontest:before {
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  width: 100%;
+  border-bottom: 4px solid transparent;
+  border-left: 4px solid transparent;
+  box-sizing: border-box;
+  transform: translateX(100%);
+}
+
+.buttontest:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  border-top: 4px solid transparent;
+  border-right: 4px solid transparent;
+  box-sizing: border-box;
+  transform: translateX(-100%);
+}
+
+.buttontest:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.buttontest:hover:before {
+  border-color: #8cdeff;
+  height: 100%;
+  transform: translateX(0);
+  transition: .2s transform linear, .2s height linear .2s;
+}
+
+.buttontest:hover:after {
+  border-color: #8cdeff;
+  height: 100%;
+  transform: translateX(0);
+  transition: .2s transform linear, .2s height linear .3s;
+}
+
+.buttontest {
+  color: #8cdeff;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+/*End Test carousel*/

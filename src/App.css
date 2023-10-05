@@ -363,7 +363,13 @@ input {
 }
 
 .about_image img {
+  height: 50vh;
   width: 100%;
+  border-radius: 20px;
+}
+
+.about_image img:hover{
+  transform:rotate(2deg)
 }
 
 .about_taital {
@@ -392,10 +398,26 @@ input {
 }
 
 .about_taital_main {
-  width: 100%;
+  width: 80%;
   float: left;
-  padding-top: 95px;
+  padding-top: 135px;
+  font-weight: 400;
+  padding-left: 50px;
 }
+
+@media(max-width:600px){
+  .about_taital_main{
+    padding-left: 10px;
+  }
+}
+/* .img-fluid{
+  border-radius: 259px;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  object-position: center;
+  text-align: center;
+} */
 @media (max-width:600px){
   .about_section_2{
     padding-top: 10px !important;

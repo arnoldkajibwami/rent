@@ -9,7 +9,8 @@ import Admin from './Admin';
 import { CartProvider } from 'react-use-cart';
 
 import './App.css'
-import Moreitems from "./MoreItems";
+import Moreitems from "./Moreitems"
+import ItemsDetails from "./ItemsDetail";
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/itemsdetails" element={<ItemsDetails />} />
         </Routes>
         <Footer />
       </Router>
@@ -34,4 +36,5 @@ function App() {
 }
 
 export default App
+
 

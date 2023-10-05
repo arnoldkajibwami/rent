@@ -23,7 +23,7 @@ export default function Footer() {
 
                             <div className="col-lg-4 col-md-6">
                                 <div className="footer-info">
-                                    <NavLink style={{ color: "white", textDecoration: "none" }} onClick={BackToTOP} to="/login"><h3>Rent</h3></NavLink>
+                                    <NavLink style={{ color: "white", textDecoration: "none" }} onClick={BackToTOP} to="/login"><h3>RentHouse</h3></NavLink>
                                     <p>
                                         Bukavu <br />
                                         Sud-kivu /RDC<br /><br />
