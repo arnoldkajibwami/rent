@@ -6,7 +6,7 @@ import HouseLocation from "./HouseLocation";
 import WhatsappPop from "./WhatsappPop";
 
 
-export default function Moreitems() {
+export default function Houses() {
     return (
         <>
             <WhatsappPop/>
