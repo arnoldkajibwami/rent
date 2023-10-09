@@ -10,6 +10,8 @@ import { CartProvider } from 'react-use-cart';
 import './App.css'
 import ItemsDetails from "./ItemsDetail";
 import Houses from "./Houses";
+import SearchBar from "./SearchBar";
+import AppSearch from "./MainSearch";
 
 
 function App() {

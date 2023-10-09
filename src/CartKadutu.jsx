@@ -1,9 +1,8 @@
 import { useCart } from "react-use-cart"
 import Breadcrumb from "./Breadcrumb"
 import Contact from "./Contact"
-import Items from "./Items"
 
-export default function Cartitems() {
+export default function CartKadutu() {
     function addItems() {
         alert("contact us on +243 999 888 777 THANK YOU")
     }
@@ -15,13 +14,15 @@ export default function Cartitems() {
         removeItem,
     } = useCart()
     if (isEmty) return <h1>Empty</h1>
-
+    const filtered = items.filter(item => {
+        return item.commune === 'kadutu';
+      });
 
     return (
         <section>
             <div className="admincart admin container">
 
-                {items.map((item) => {
+                {filtered.map((item) => {
                     return (
                         <div key={item.id} className=" card mt-4" style={{ width: "18rem" }}>
                             <img class="card-img-top" src={item.image} alt="Card image cap" />

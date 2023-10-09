@@ -1,6 +1,9 @@
 import React from 'react'
 import "./Houselocation.css"
 import Cartitems from './Cartitems'
+import CartIbanda from './CardIbanda'
+import CartBagira from './CardBagira'
+import CartKadutu from './CartKadutu'
 
 export default function HouseLocation() {
     return (
@@ -13,6 +16,7 @@ export default function HouseLocation() {
 
                         <div className="menu_content">
                             <h1>Ibanda Houses</h1>
+                            <CartIbanda />
                         </div>
                     </div>
                 </li>
@@ -23,6 +27,7 @@ export default function HouseLocation() {
 
                         <div className="menu_content">
                             <h1>Kadutu Houses</h1>
+                            <CartKadutu />
                         </div>
                     </div>
                 </li>
@@ -32,15 +37,19 @@ export default function HouseLocation() {
                     <div className="contents    ">
                         <h1>Bagira Houses</h1>
                         <div className="menu_content">
-
+                            <CartBagira />
                         </div>
                     </div>
                 </li>
                 <li>
-                    <input type="radio" name="tab" id="label-4" checked/>
+                    <input type="radio" name="tab" id="label-4" checked />
                     <label for="label-4" className="buttontest">All</label>
                     <div className="contents    ">
-                        <Cartitems/>
+                        <div className='d-flex justify-content-between' style={{ flexWrap: "wrap" }}>
+                            <CartIbanda />
+                            <CartBagira />
+                            <CartKadutu />
+                        </div>
                     </div>
                 </li>
             </ul>
