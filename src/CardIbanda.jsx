@@ -1,6 +1,6 @@
-import { useCart } from "react-use-cart"
-import Breadcrumb from "./Breadcrumb"
-import Contact from "./Contact"
+import { useCart } from "react-use-cart";
+import { useState } from "react";
+import ReactModal from 'react-modal';
 
 export default function CartIbanda() {
     function addItems() {
@@ -17,7 +17,9 @@ export default function CartIbanda() {
 
     const filtered = items.filter(item => {
         return item.commune === 'ibanda';
-      });
+    });
+
+    const [isOpen, setIsOpen] = useState(false);
 
     return (
         <section>
@@ -26,9 +28,11 @@ export default function CartIbanda() {
                 {filtered.map((item) => {
                     return (
                         <div key={item.id} className=" card mt-4" style={{ width: "18rem" }}>
-                            <img class="card-img-top" src={item.image} alt="Card image cap" />
+                            <div className="card-img-top" style={{ backgroundImage: `url(${item.image})` }}>
+                                <h6>{item.category}</h6>
+                            </div>
 
-                            <div class="card-body">
+                            <div className="card-body">
 
                                 <div className="card-title">
                                     <h5 >{item.location}</h5>
@@ -37,15 +41,50 @@ export default function CartIbanda() {
                                 <p className="card-text">{item.description}</p>
 
                                 <div className="buttoncard buttoncards ">
-                                    <button className="btn btn-primary"
-                                        onClick={() => addItems(item.item)}>Rent your house</button>
+                                    <button className="btn btn-primarye"
+                                        onClick={() => addItems(item.item)}>Rent Now</button>
+                                    <div className="container text-center">
+                                        <button onClick={setIsOpen} className="buttondertails">More Details</button>
+                                        <ReactModal
+                                            isOpen={isOpen}
+                                            className="popupmodel"
+                                            contentLabel="Popup Modal"
+                                        >
+                                            <div className="cartitemspopup">
+                                                <div style={{ height: "530px" }}>
+                                                    <div className="d-flex closebtn">
+                                                        <div></div>
+                                                        <button className="closebutton btn btn-danger" onClick={() => setIsOpen(false)}>
+                                                            <span>X</span>
+                                                        </button>
+                                                        <div></div>
+                                                    </div>
+                                                    <div className="formsall">
+                                                        <div>
+                                                            <div className="allpictures">
+                                                                <img className="imgdetails" src={item.image1} alt="not found" />
+                                                                <img className="imgdetails" src={item.image2} alt="not found" />
+                                                                <img className="imgdetails" src={item.image3} alt="not found" />
+                                                                <img className="imgdetails" src={item.image4} alt="not found" />
+                                                            </div>
+                                                            <p className="card-text">{item.description}</p>
+                                                            <h5 >{item.location}</h5>
+                                                            <h5 >{item.price}</h5>
+                                                            <button className="btn btn-primary"
+                                                                onClick={() => addItems(item.item)}>Rent </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </ReactModal>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     )
                 })}
-            </div>
-        </section>
+            </div >
+        </section >
     )
 };
 

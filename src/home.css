@@ -1,8 +1,8 @@
 .Contentbg{
-    background-image: url(./images/house4.jpg);
+    background-image: url(./images/house3.jpg);
     background-position: center;
     background-size: cover;
-    height: 80vh;
+    height: 60vh;
   }
 .homecontent{
     background-color: transparent;
@@ -10,7 +10,17 @@
     top:calc(80vh - 55vh);
     width: 60%;
     margin-left: 70px;
+}
 
+.homecontents{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 20px;
+    color :white;
+    top: 20%;
+    /* background-color: red; */
 }
 .hometext{
     color: rgb(247, 247, 247);

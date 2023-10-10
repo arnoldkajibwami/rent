@@ -10,8 +10,8 @@ import { CartProvider } from 'react-use-cart';
 import './App.css'
 import ItemsDetails from "./ItemsDetail";
 import Houses from "./Houses";
-import SearchBar from "./SearchBar";
-import AppSearch from "./MainSearch";
+import Translate from "./Translate";
+import CarsItem from "./CarsItem";
 
 
 function App() {
@@ -20,10 +20,13 @@ function App() {
     <CartProvider>
       <Router>
         <Header />
+        <Translate/>
+        {/* <Cars/> */}
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/items" element={<Houses />} />
+          <Route path="/cars" element={<CarsItem/>} />
           <Route path="/adminpage" element={<Admin />} />
           <Route path="about" element={<About />} />
           <Route path="/contact" element={<Contact />} />

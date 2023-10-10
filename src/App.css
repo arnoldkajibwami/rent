@@ -6,6 +6,9 @@ html {
   overflow-x: hidden !important;
 }
 
+body{
+  font-size: medium !important;
+}
 .admin {
   display: flex;
   justify-content: space-evenly;
@@ -97,7 +100,7 @@ input {
 .buttoncard {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px !important;
+  /* margin-bottom: 50px !important; */
 }
 
 .breadcrumbHome:hover {
@@ -258,8 +261,8 @@ input {
 }
 
 .buttoncard {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
   margin-bottom: 20px !important;
 }
 
@@ -722,9 +725,18 @@ input {
 
 
 .card-img-top {
-  height: 30vh !important;
-  object-fit: cover !important;
-  object-position: center;
+  height: 30vh ;
+  background-size: cover;
+  background-position: center;
+  /* object-position: center; */
+}
+.card-img-top h6{
+  background-color: #FD841F !important;
+  color: white;
+  font-size: small;
+  width: 55px !important;
+  border-radius: 0px 0px 10px 0px;
+  padding: 10px;
 }
 
 .card-title {
@@ -736,4 +748,215 @@ input {
 
 #login-error-msg-holder {
   display: none;
+}
+
+.translate{
+  position: fixed;
+  color :white;
+  transform: translateY(50vh);
+  width:5%;
+  float: left !important;
+  z-index: 9999999999999999999999999999999;
+}
+
+.formsall{
+  background-color:white;
+  padding: 50px;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+.cartitemspopup{
+  position: absolute;
+  top: 0%;
+  left: 3%;
+  display: flex;
+  justify-content: center;
+  float: left !important;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 20px;
+  color :black;
+  height: auto + 40px;
+  width: 400px !important;
+  /* background-color: white; */
+}
+
+.imgdetails{
+  height: 120px;
+  width: 120px;
+  margin:5px;
+  border-radius: 10px;
+}
+
+
+.buttondertails {
+  position: relative;
+  padding: 10px 22px;
+  border-radius: 6px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  background-color:#FD841F;
+  transition: all 0.2s ease;
+  font-size: medium;
+}
+
+.buttondertails:active {
+  transform: scale(0.96);
+}
+
+.buttondertails:before,
+.buttondertails:after {
+  position: absolute;
+  content: "";
+  width: 150%;
+  left: 50%;
+  height: 100%;
+  transform: translateX(-50%);
+  z-index: -1000;
+  background-repeat: no-repeat;
+}
+
+.buttondertails:hover:before {
+  top: -70%;
+  background-image: radial-gradient(circle,#FD841F 20%, transparent 20%),
+    radial-gradient(circle, transparent 20%,#FD841F 20%, transparent 30%),
+    radial-gradient(circle,#FD841F 20%, transparent 20%),
+    radial-gradient(circle,#FD841F 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%,#FD841F 15%, transparent 20%),
+    radial-gradient(circle,#FD841F 20%, transparent 20%),
+    radial-gradient(circle,#FD841F 20%, transparent 20%),
+    radial-gradient(circle,#FD841F 20%, transparent 20%),
+    radial-gradient(circle,#FD841F 20%, transparent 20%);
+  background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%,
+    10% 10%, 18% 18%;
+  background-position: 50% 120%;
+  animation: greentopBubbles 0.6s ease;
+}
+
+@keyframes greentopBubbles {
+  0% {
+    background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%,
+      40% 90%, 55% 90%, 70% 90%;
+  }
+
+  50% {
+    background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%,
+      50% 50%, 65% 20%, 90% 30%;
+  }
+
+  100% {
+    background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%,
+      50% 40%, 65% 10%, 90% 20%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+
+.buttondertails:hover::after {
+  bottom: -70%;
+  background-image: radial-gradient(circle,#FD841F 20%, transparent 20%),
+    radial-gradient(circle,#FD841F 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%,#FD841F 15%, transparent 20%),
+    radial-gradient(circle,#FD841F 20%, transparent 20%),
+    radial-gradient(circle,#FD841F 20%, transparent 20%),
+    radial-gradient(circle,#FD841F 20%, transparent 20%),
+    radial-gradient(circle,#FD841F 20%, transparent 20%);
+  background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 20% 20%, 18% 18%;
+  background-position: 50% 0%;
+  animation: greenbottomBubbles 0.6s ease;
+}
+
+@keyframes greenbottomBubbles {
+  0% {
+    background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%,
+      70% -10%, 70% 0%;
+  }
+
+  50% {
+    background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%,
+      105% 0%;
+  }
+
+  100% {
+    background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%,
+      110% 10%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+
+.cssbuttons-io-button {
+  margin-top: 50px;
+  background: #001253;
+  color: white;
+  font-family: inherit;
+  padding: 0.35em;
+  padding-left: 1.2em;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 0.9em;
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 1.6em -0.6em #001253;
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3.3em;
+}
+
+.cssbuttons-io-button .icon {
+  background: white;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em #001253;
+  right: 0.3em;
+  transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .icon {
+  width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: #001253;
+}
+
+.cssbuttons-io-button:hover .icon svg {
+  transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+  transform: scale(0.95);
+}
+
+.btn-primarye{
+  background-color: #001253;
+  color: white;
+}
+.btn-primarye:hover{
+  background-color: #001253;
+  color: white;
+}
+
+.itemsalls{
+  /* display: grid;
+  grid-template-columns: repeat(4, 1fr); */
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.allpictures{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap ;
 }

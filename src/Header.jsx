@@ -21,12 +21,12 @@ const Header = () => {
   window.addEventListener('scroll', changeNavbarColor);
 
   return (
-    <Fragment>  
+    <Fragment>
 
       <nav className={colorChange ? 'navbar colorChange' : 'navbar'}>
         <div className="Navcontainer container">
           <div className="logo">
-            <NavLink to="/home" style={{textDecoration:"none"}}><h4>RentHouse</h4></NavLink>
+            <NavLink to="/home" style={{ textDecoration: "none" }}><h4>RentHouse</h4></NavLink>
           </div>
           <div className="menu-icon" onClick={handleShowNavbar}>
             {/* <button className='btn btn-danger'>Back</button> */}
@@ -47,6 +47,9 @@ const Header = () => {
               <NavLink to="/adminpage">Admin</NavLink> 
             </li> */}
               <li>
+                <NavLink to="/cars">Cars</NavLink>
+              </li>
+              <li>
                 <NavLink to="/about">About</NavLink>
               </li>
               <li>
@@ -57,6 +60,7 @@ const Header = () => {
         </div>
       </nav>
     </Fragment>
+
   )
 }
 

@@ -4,55 +4,54 @@ import Cartitems from './Cartitems'
 import CartIbanda from './CardIbanda'
 import CartBagira from './CardBagira'
 import CartKadutu from './CartKadutu'
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import 'react-tabs/style/react-tabs.css';
+import CartRent from './CartRent'
+import CartSell from './CartSell'
+import HomeCard from './HomeCard'
 
-export default function HouseLocation() {
+export default function Houselocation() {
     return (
-        <>
-            <ul className="mains container">
-                <li>
-                    <input type="radio" name="tab" id="label-1" />
-                    <label for="label-1" className="buttontest">Ibanda</label>
-                    <div className="contents    ">
+        <Tabs >
+            <TabList className="container" style={{marginTop:"20px"}}>
+                <Tab style={{ color: "#001253" }}>All</Tab>
+                <Tab style={{ color: "#001253" }}>Ibanda</Tab>
+                <Tab style={{ color: "#001253" }}>Kadutu</Tab>
+                <Tab style={{ color: "#001253" }}>Bagira</Tab>
+                <Tab style={{ color: "#001253" }}>To Sell</Tab>
+                <Tab style={{ color: "#001253" }}>To Rent</Tab>
+            </TabList>
 
-                        <div className="menu_content">
-                            <h1>Ibanda Houses</h1>
-                            <CartIbanda />
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <input type="radio" name="tab" id="label-2" />
-                    <label for="label-2" className="buttontest">Kadutu</label>
-                    <div className="contents    ">
-
-                        <div className="menu_content">
-                            <h1>Kadutu Houses</h1>
-                            <CartKadutu />
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <input type="radio" name="tab" id="label-3" />
-                    <label for="label-3" className="buttontest">Bagira</label>
-                    <div className="contents    ">
-                        <h1>Bagira Houses</h1>
-                        <div className="menu_content">
-                            <CartBagira />
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <input type="radio" name="tab" id="label-4" checked />
-                    <label for="label-4" className="buttontest">All</label>
-                    <div className="contents    ">
-                        <div className='d-flex justify-content-between' style={{ flexWrap: "wrap" }}>
-                            <CartIbanda />
-                            <CartBagira />
-                            <CartKadutu />
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </>
-    )
+            <TabPanel>
+                {/* <h2>All</h2> */}
+                {/* <Cartitems /> */}
+            
+                    <HomeCard/>
+                    <CartRent/>
+                    <CartSell/>
+                {/* </div> */}
+            </TabPanel>
+            <TabPanel>
+                {/* <h2>Ibanda</h2> */}
+                <CartIbanda />
+            </TabPanel>
+            <TabPanel>
+                {/* <h2>Kadutu</h2> */}
+                <CartKadutu />
+            </TabPanel>
+            <TabPanel>
+                {/* <h2>Bagira</h2> */}
+                <CartBagira />
+            </TabPanel>
+            <TabPanel>
+                {/* <h2>To Sell</h2> */}
+                <CartSell/>
+            </TabPanel>
+            <TabPanel>
+                {/* <h2>To Rent</h2> */}
+                <CartRent />
+            </TabPanel>
+        </Tabs>
+    );
 }
+

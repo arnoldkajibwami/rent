@@ -26,37 +26,40 @@ export default function Admin(props) {
                     className="popupmodel"
                     contentLabel="Popup Modal"
                 >
-                    <div class="cards cardpopup" style={{ height: "530px" }}>
-                        <div className="d-flex closebtn">
-                            <div></div>
-                            <button className="closebutton btn btn-danger" onClick={() => setIsOpen(false)}>
-                            <span>X</span>
-                        </button>
-                        <div></div>
+                    <div className="cartitemspopup">
+                        <div className="cards cardpopup" style={{ height: "530px" }}>
+                            <div className="d-flex closebtn">
+                                <div></div>
+                                <button className="closebutton btn btn-danger" onClick={() => setIsOpen(false)}>
+                                    <span>X</span>
+                                </button>
+                                <div></div>
+                            </div>
+                            <form className="forms">
+                                <div className="group">
+                                    <input placeholder="House name" type="text" required="" />
+
+                                </div>
+                                <div className="group">
+                                    <input placeholder="location" type="email" id="email" name="email" required="" />
+
+                                </div>
+                                <div className="group">
+                                    <input placeholder="Prix" type="email" id="email" name="email" required="" />
+
+                                </div>
+                                <div className="group">
+                                    <input placeholder="image" type="link" id="email" name="email" required="" />
+
+                                </div>
+                                <div className="group">
+                                    <textarea placeholder="Description" id="comment" name="comment" rows="5" required=""></textarea>
+
+                                </div>
+                                <button onClick={addItems} type="submit" className='btn btn-danger'>Add</button>
+                            </form>
                         </div>
-                        <form class="forms">
-                            <div class="group">
-                                <input placeholder="House name" type="text" required="" />
 
-                            </div>
-                            <div class="group">
-                                <input placeholder="location" type="email" id="email" name="email" required="" />
-
-                            </div>
-                            <div class="group">
-                                <input placeholder="Prix" type="email" id="email" name="email" required="" />
-
-                            </div>
-                            <div class="group">
-                                <input placeholder="image" type="link" id="email" name="email" required="" />
-
-                            </div>
-                            <div class="group">
-                                <textarea placeholder="Description" id="comment" name="comment" rows="5" required=""></textarea>
-
-                            </div>
-                            <button onClick={addItems} type="submit" className='btn btn-danger'>Add</button>
-                        </form>
                     </div>
                 </ReactModal>
 

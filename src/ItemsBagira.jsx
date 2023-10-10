@@ -10,8 +10,8 @@ export default function Itemsbagira(props) {
   return (
     <>
       <div className="container itembox cards" style={{ backgroundImage: `url(${props.image})` }}>
-        <div class="card_content">
-          <span class="card_subtitle text-center">
+        <div className="card_content">
+          <span className="card_subtitle text-center">
             <h6>{props.description}</h6>
           </span>
           <div className="card_description">

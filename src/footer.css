@@ -3,21 +3,22 @@
     color: #fff;
     background: url("./images/banner-bg.png") top center no-repeat;
     background-size: cover;
+    background-color: black;
     font-size: 14px;
     padding: 80px 0 60px 0;
-    position: relative;
+    /* position: relative; */
   }
   
   .footers {
     color: #fff;
   }
   
-  .footer:before {
+  /* .footer:before {
     content: "";
     background-color: black;
     position: absolute;
     inset: 0;
-  }
+  } */
   
   .footer .footer-content .footer-info {
     margin-bottom: 30px;

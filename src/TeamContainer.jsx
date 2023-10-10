@@ -1,5 +1,5 @@
 import React from "react";
-import Team1 from "./images/flag.jpg"
+import Team1 from "./images/house1.jpg"
 import { Link } from "react-router-dom";
 
 export default function TeamContainer() {
