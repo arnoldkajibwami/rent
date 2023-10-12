@@ -9,14 +9,6 @@ export default function HomeCard() {
     function addItems() {
         alert("contact us on +243 999 888 777 THANK YOU")
     }
-    // const {
-    //     isEmty,
-    //     totalUniqueItems,
-    //     items,
-    //     updateItemQuantity,
-    //     removeItem,
-    // } = useCart()
-    // if (isEmty) return <h1>Empty</h1>
 
     const filtered = Data.filter(item => {
         return item.accueil === "new";
@@ -46,7 +38,7 @@ export default function HomeCard() {
 
                                 <div className="buttoncard buttoncards ">
                                     <button className="btn btn-primarye"
-                                        onClick={() => addItems(item.item)}>Rent Now</button>
+                                        onClick={() => addItems(item.item)}>{item.category} now</button>
                                     <div className="container text-center">
                                         <button onClick={setIsOpen} className="buttondertails">More Details</button>
                                         <ReactModal

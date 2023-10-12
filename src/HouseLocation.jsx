@@ -35,14 +35,14 @@ export default function Houselocation() {
                 {/* <h2>Ibanda</h2> */}
                 <CartIbanda />
             </TabPanel>
-            <TabPanel>
-                {/* <h2>Kadutu</h2> */}
-                <CartKadutu />
-            </TabPanel>
-            <TabPanel>
-                {/* <h2>Bagira</h2> */}
-                <CartBagira />
-            </TabPanel>
+                <TabPanel>
+                    {/* <h2>Kadutu</h2> */}
+                    <CartKadutu />
+                </TabPanel>
+                <TabPanel>
+                    {/* <h2>Bagira</h2> */}
+                    <CartBagira />
+                </TabPanel>
             <TabPanel>
                 {/* <h2>To Sell</h2> */}
                 <CartSell/>

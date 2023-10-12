@@ -40,7 +40,7 @@ export default function Cartitems() {
 
                                     <div className="buttoncard buttoncards ">
                                         <button className="btn btn-primarye"
-                                            onClick={() => addItems(item.item)}>Rent Now</button>
+                                            onClick={() => addItems(item.item)}>{item.category} now</button>
                                         <div className="container text-center">
                                             <button onClick={setIsOpen} className="buttondertails">More Details</button>
                                             <ReactModal

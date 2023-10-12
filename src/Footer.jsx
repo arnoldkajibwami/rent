@@ -23,12 +23,12 @@ export default function Footer() {
 
                             <div className="col-lg-4 col-md-6">
                                 <div className="footer-info">
-                                    <NavLink style={{ color: "white", textDecoration: "none" }} onClick={BackToTOP} to="/login"><h3>RentHouse</h3></NavLink>
+                                    <NavLink style={{ color: "white", textDecoration: "none" }} onClick={BackToTOP} to="/login"><h3><span style={{color:"#FD841F"}}>QUISH</span>Service</h3></NavLink>
                                     <p>
                                         Bukavu <br />
                                         Sud-kivu /RDC<br /><br />
-                                        <strong>Phone:</strong> +243 999 888 777<br />
-                                        <strong>Email:</strong> renthouse@gmail.com<br />
+                                        <strong>Phone:</strong> +243 975 710 489<br />
+                                        <strong>Email:</strong> QuichService@gmail.com<br />
                                     </p>
                                     <div className="social-links d-flex mt-3">
                                         <Link href="#" className="d-flex align-items-center justify-content-center"><i><BiLogoFacebook/></i></Link>
@@ -70,10 +70,10 @@ export default function Footer() {
                             </button>
                         </div>
                         <div className="copyright">
-                            &copy; Copyright <strong><span><NavLink style={{ color: "skyblue", textDecoration: "none" }} to="/adminpage" onClick={BackToTOP} className="Madename">AuctuxRent</NavLink></span></strong>. All Rights Reserved
+                            &copy; Copyright <strong><span><NavLink style={{ color: "skyblue", textDecoration: "none" }} to="/adminpage" onClick={BackToTOP} className="Madename">NgtechRent</NavLink></span></strong>. All Rights Reserved
                         </div>
                         <div className="credits">
-                            Made by <NavLink to="https://auctux.com/" style={{ color: "skyblue", textDecoration: "none", fontWeight: "bold" }} className="Madename">Auctux</NavLink>
+                            Made by <NavLink to="https://Ng-technology.netlify.app" style={{ color: "skyblue", textDecoration: "none", fontWeight: "bold" }} className="Madename">Ngtech</NavLink>
                         </div>
                     </div>
                 </div>

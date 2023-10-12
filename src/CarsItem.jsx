@@ -1,11 +1,17 @@
 import React from "react";
+import Cartitems from "./Cartitems";
+import Breadcrumb from "./Breadcrumb";
+import HouseLocation from "./HouseLocation";
+import WhatsappPop from "./WhatsappPop";
+import CarsitemsLocation from "./CarsItemsLocation";
 
-export default function CarsItem (){
-    return(
+
+export default function Carsitems() {
+    return (
         <>
-            {/* <WhatsappPop/>
+            <WhatsappPop/>
             <Breadcrumb page={"Cars"} />
-            <h1 className="container">Cars</h1> */}
+            <CarsitemsLocation/>
         </>
     );
 }

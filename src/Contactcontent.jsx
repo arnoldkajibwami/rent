@@ -23,7 +23,7 @@ export default function Contactcontent() {
               <div className="info-item d-flex flex-column justify-content-center align-items-center">
                 <i className="bi bi-envelope"></i>
                 <h3>Email Us</h3>
-                <p>renthouse@gmail.com</p>
+                <p>QuichService@gmail.com</p>
               </div>
             </div>
 

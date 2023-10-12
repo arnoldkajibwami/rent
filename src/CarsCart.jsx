@@ -1,23 +1,17 @@
 import { useCart } from "react-use-cart";
 import { useState } from "react";
 import ReactModal from 'react-modal';
-// import close from "./images/close.png"
+import Datacars from "./Datacars";
 
-export default function CartBagira() {
+
+export default function CarsCart() {
     function addItems() {
         alert("contact us on +243 999 888 777 THANK YOU")
     }
-    const {
-        isEmty,
-        totalUniqueItems,
-        items,
-        updateItemQuantity,
-        removeItem,
-    } = useCart()
-    if (isEmty) return <h1>Empty</h1>
 
-    const filtered = items.filter(item => {
-        return item.commune === 'bagira';
+    const filtered = Datacars.filter(item => {
+        return item.accueil === "new";
+        
     });
 
     const [isOpen, setIsOpen] = useState(false);
@@ -37,6 +31,7 @@ export default function CartBagira() {
 
                                 <div className="card-title">
                                     <h5 >{item.location}</h5>
+                                    <h5 >{item.marque}</h5>
                                     <h5 >{item.price}</h5>
                                 </div>
                                 <p className="card-text">{item.description}</p>

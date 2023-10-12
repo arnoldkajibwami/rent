@@ -2,7 +2,7 @@ import React from "react";
 import Cartitems from "./Cartitems";
 import './home.css';
 import Aboutcomponent from "./Aboutcomponent";
-import { Link, NavLink, useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import Contactcontent from "./Contactcontent";
 import WhatsappPop from "./WhatsappPop";
 import SearchBar from "./SearchBar";
@@ -20,7 +20,9 @@ export default function Home() {
             <WhatsappPop />
             <section className=" Contentbg ">
                 <div className="Navcontainer homecontents text-center">
-                    <h4 style={{ color: "black" }}>Welcome to Bukavu Rent</h4>
+                    <h4 style={{ color: "black" }}>Welcome to Quich Service</h4>
+                    <h1 className="text-center">QUI CHERCHE, TROUVE!</h1>
+                    <p className="text-center">Nous sommes la pour vous aider a satisfaire vos besoins selon vos moyen et ressources.</p>
                     <SearchBar />
                 </div>
 

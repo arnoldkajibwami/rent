@@ -1,33 +1,33 @@
-import Image1 from "./images/house1.jpg"
-import Image2 from "./images/house2.jpg"
-import Image3 from "./images/house3.jpg"
-import Image4 from "./images/house4.jpg"
-import Image5 from "./images/1.jpg"
-import Image6 from "./images/2.jpg"
-import Image7 from "./images/3.jpg"
-import Image8 from "./images/4.jpg"
-import Image9 from "./images/5.jpg"
-import Image10 from "./images/8.jpg"
-import Image11 from "./images/12.jpg"
-import Image12 from "./images/11.jpg"
-import Image13 from "./images/10.jpg"
-import Image14 from "./images/19.jpg"
-import Image15 from "./images/16.jpg"
+import Image1 from "./images/100.jpeg"
+import Image2 from "./images/101.jpeg"
+import Image3 from "./images/102.jpeg"
+import Image4 from "./images/103.jpeg"
+import Image5 from "./images/104.jpeg"
+import Image6 from "./images/105.jpeg"
+import Image7 from "./images/106.jpeg"
+import Image8 from "./images/107.jpeg"
+import Image9 from "./images/108.jpeg"
+import Image10 from "./images/109.jpeg"
+import Image11 from "./images/110.jpeg"
+import Image12 from "./images/111.jpeg"
+import Image13 from "./images/112.jpeg"
+import Image14 from "./images/113.jpeg"
+import Image15 from "./images/114.jpeg"
 
 
-const Data =
+const Datacars =
     [
         {
             id: "1",
             // id: `${data_copy.length + 1}`,
-            accueil:"old",
-            name: "House 1",
+            accueil:"new",
+            name: " house 1",
             image: Image1,
-            price: "150$",
-            location: "Located In Nguba",
+            price: "400$",
+            location: "Bukavu",
             by: "Ngtech",
-            commune: "ibanda",
-            description: "House with 2 bedrooms, 1  living room, kitchen,1 wcs ",
+            marque:"Toyota",
+            description: " 00with 2 bedrooms, 1  living room, kitchen,1 wcs ",
             image1: Image1,
             image2: Image5,
             image3: Image12,
@@ -39,10 +39,10 @@ const Data =
             accueil:"old",
             name: "House 2",
             image: Image2,
-            price: "400$",
-            location: "Located In Nguba",
+            price: "150$",
+            location: "uvira",
             by: "Ngtech",
-            commune: "ibanda",
+            marque:"Toyota",
             description: "House with 3 bedrooms, 1  living room, kitchen,1 wcs ",
             image1: Image2,
             image2: Image6,
@@ -52,13 +52,13 @@ const Data =
         },
         {
             id: "3",
-            accueil:"new",
+            accueil:"old",
             name: "House 3",
             image: Image3,
-            price: "350$",
-            location: "Located In Muhumba",
+            price: "8500$",
+            location: "Bukavu",
             by: "Ngtech",
-            commune: "ibanda",
+            marque:"Toyota",
             description: "House with 2 bedrooms, 1  living room, kitchen,1 wcs ",
             image1: Image9,
             image2: Image10,
@@ -71,10 +71,10 @@ const Data =
             accueil:"old",
             name: "House 4",
             image: Image4,
-            price: "400$",
-            location: "Located In labotte",
+            price: "12000$",
+            location: "Bukavu",
             by: "Ngtech",
-            commune: "ibanda",
+            marque:"Toyota",
             description: "House with 4 bedrooms, 2 living room, kitchen,1 wcs ",
             image1: Image13,
             image2: Image14,
@@ -89,9 +89,9 @@ const Data =
             name: "House 5",
             image: Image5,
             price: "300$",
-            location: "Located In Nyawera",
+            location: "Goma",
             by: "Ngtech",
-            commune: "ibanda",
+            marque:"Toyota",
             description: "House with 2 bedrooms, 1  living room, kitchen,1 wcs ",
             image1: Image1,
             image2: Image5,
@@ -105,10 +105,10 @@ const Data =
             accueil:"new",
             name: "House 6",
             image: Image6,
-            price: "100$",
-            location: "Located In Bagira",
+            price: "700$",
+            location: "Goma",
             by: "Ngtech",
-            commune: "bagira",
+            marque:"benz",
             description: "House with 2 bedrooms, 1  living room, kitchen,1 wcs ",
             image1: Image1,
             image2: Image6,
@@ -122,10 +122,10 @@ const Data =
             accueil:"new",
             name: "House 7",
             image: Image7,
-            price: "150$",
-            location: "Located In Kadutu",
+            price: "45000$",
+            location: "Bukavu",
             by: "Ngtech",
-            commune: "kadutu",
+            marque:"Land Cruiser",
             description: "House with 2 bedrooms, 1  living room, kitchen,1 wcs ",
             image1: Image1,
             image2: Image7,
@@ -137,4 +137,4 @@ const Data =
     ]
 
 
-export default Data;
+export default Datacars;

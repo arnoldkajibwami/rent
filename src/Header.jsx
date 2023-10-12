@@ -26,7 +26,7 @@ const Header = () => {
       <nav className={colorChange ? 'navbar colorChange' : 'navbar'}>
         <div className="Navcontainer container">
           <div className="logo">
-            <NavLink to="/home" style={{ textDecoration: "none" }}><h4>RentHouse</h4></NavLink>
+            <NavLink to="/home" style={{ textDecoration: "none" }}><h4><span style={{color:"#FD841F"}}>QUISH</span>Service</h4></NavLink>
           </div>
           <div className="menu-icon" onClick={handleShowNavbar}>
             {/* <button className='btn btn-danger'>Back</button> */}

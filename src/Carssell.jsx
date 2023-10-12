@@ -1,23 +1,16 @@
-import { useCart } from "react-use-cart";
 import { useState } from "react";
 import ReactModal from 'react-modal';
-// import close from "./images/close.png"
+import Datacars from "./Datacars";
 
-export default function CartBagira() {
+
+export default function Carssell() {
     function addItems() {
         alert("contact us on +243 999 888 777 THANK YOU")
     }
-    const {
-        isEmty,
-        totalUniqueItems,
-        items,
-        updateItemQuantity,
-        removeItem,
-    } = useCart()
-    if (isEmty) return <h1>Empty</h1>
 
-    const filtered = items.filter(item => {
-        return item.commune === 'bagira';
+    const filtered = Datacars.filter(item => {
+        return item.category === "Sell";
+        
     });
 
     const [isOpen, setIsOpen] = useState(false);
@@ -28,7 +21,7 @@ export default function CartBagira() {
 
                 {filtered.map((item) => {
                     return (
-                        <div key={item.id} className=" card mt-4" style={{ width: "18rem" }}>
+                        <div key={item.id} className=" card mt-4" style={{ width: "18rem"}}>
                             <div className="card-img-top" style={{ backgroundImage: `url(${item.image})` }}>
                                 <h6>{item.category}</h6>
                             </div>
@@ -39,6 +32,7 @@ export default function CartBagira() {
                                     <h5 >{item.location}</h5>
                                     <h5 >{item.price}</h5>
                                 </div>
+                                <h5 style={{textTransform:"capitalize"}}>{item.marque}</h5>
                                 <p className="card-text">{item.description}</p>
 
                                 <div className="buttoncard buttoncards ">

@@ -8,7 +8,7 @@ import ReactModal from 'react-modal';
 export default function Admin(props) {
     const { totalUniqueItems } = useCart()
     function addItems() {
-        alert("Open www.auctux.com")
+        alert("Open www.Ngtech.com")
     }
 
     const [isOpen, setIsOpen] = useState(false);
