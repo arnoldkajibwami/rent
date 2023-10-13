@@ -1,18 +1,15 @@
-import { useCart } from "react-use-cart";
 import { useState } from "react";
 import ReactModal from 'react-modal';
-import Items from "./Items";
-import Data from "./Data";
-// import close from "./images/close.png"
+import Datacars from "./Datacars";
 
-export default function HomeCard() {
+
+export default function CarsHome() {
     function addItems() {
         alert("contact us on +243 999 888 777 THANK YOU")
     }
 
-    const filtered = Data.filter(item => {
+    const filtered = Datacars.filter(item => {
         return item.accueil === "new";
-        
     });
 
     const [isOpen, setIsOpen] = useState(false);
@@ -34,6 +31,7 @@ export default function HomeCard() {
                                     <h5 >{item.location}</h5>
                                     <h5 >{item.price}</h5>
                                 </div>
+                                <h5 style={{textTransform:"capitalize"}}>{item.marque}</h5>
                                 <p className="card-text">{item.description}</p>
 
                                 <div className="buttoncard buttoncards ">

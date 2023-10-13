@@ -32,7 +32,8 @@ const Data =
             image2: Image5,
             image3: Image12,
             image4: Image4,
-            category: "Rent"
+            category: "Rent",
+            btncategory:"Rent"
         },
         {
             id: "2",
@@ -48,7 +49,8 @@ const Data =
             image2: Image6,
             image3: Image7,
             image4: Image8,
-            category: "Rent"
+            category: "Rent",
+            btncategory:"Rent"
         },
         {
             id: "3",
@@ -64,7 +66,8 @@ const Data =
             image2: Image10,
             image3: Image11,
             image4: Image3,
-            category: "Sell"
+            category: "Sell",
+            btncategory:"Buy"
         },
         {
             id: "4",
@@ -80,7 +83,8 @@ const Data =
             image2: Image14,
             image3: Image15,
             image4: Image4,
-            category: "Sell"
+            category: "Sell",
+            btncategory:"Buy"
         },
         {
             id: "5",
@@ -97,7 +101,8 @@ const Data =
             image2: Image5,
             image3: Image8,
             image4: Image12,
-            category: "Rent"
+            category: "Rent",
+            btncategory:"Rent"
         },
         {
             id: "6",
@@ -114,7 +119,8 @@ const Data =
             image2: Image6,
             image3: Image8,
             image4: Image7,
-            category: "Rent"
+            category: "Rent",
+            btncategory:"Rent"
         },
         {
             id: "7",
@@ -131,7 +137,8 @@ const Data =
             image2: Image7,
             image3: Image6,
             image4: Image8,
-            category: "Sell"
+            category: "Sell",
+            btncategory:"Buy"
         },
 
     ]
