@@ -10,7 +10,7 @@
     width: 3px !important;
     float: left !important;
     height: auto;
-    z-index: 9999999999999999999999999999999;
+    z-index: 1 !important;
 }   
 .translate button{
     font-size: small;

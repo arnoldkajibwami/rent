@@ -1,6 +1,8 @@
 import React from "react";
-import Team1 from "./images/house1.jpg"
+import Team1 from "./images/team/team-1.jpg"
+import Team2 from "./images/team/team-5.jpg"
 import { Link } from "react-router-dom";
+import { BiLogoFacebook, BiLogoInstagram, BiLogoLinkedin, BiLogoTwitter } from "react-icons/bi";
 
 export default function TeamContainer() {
     return (
@@ -12,37 +14,37 @@ export default function TeamContainer() {
                     <p>Aperiam dolorum et et wuia molestias qui eveniet numquam nihil porro incidunt dolores placeat sunt id nobis omnis tiledo stran delop</p>
                 </div>
 
-                <div className="row gy-4">
+                <div className="container row gy-4 mt-3">
 
                     <div className="col-lg-4 col-md-6 member">
                         <div className="member-img">
                             <img src={Team1} className="img-fluid" alt="" />
                             <div className="social">
-                                <Link to="#"><i className="bi bi-twitter"></i></Link>
-                                <Link to="#"><i className="bi bi-facebook"></i></Link>
-                                <Link to="#"><i className="bi bi-instagram"></i></Link>
-                                <Link to="#"><i className="bi bi-linkedin"></i></Link>
+                                <Link to="#"><i><BiLogoTwitter/></i></Link>
+                                <Link to="#"><i><BiLogoInstagram/></i></Link>
+                                <Link to="#"><i><BiLogoFacebook/></i></Link>
+                                <Link to="#"><i><BiLogoLinkedin/></i></Link>
                             </div>
                         </div>
                         <div className="member-info text-center">
-                            <h4>Person 1</h4>
+                            <h4>Fortunat Basedeke</h4>
                             <span>Président-directeur général</span>
                         </div>
                     </div>
 
                     <div className="col-lg-4 col-md-6 member">
                         <div className="member-img">
-                            <img src={Team1} className="img-fluid" alt="" />
+                            <img src={Team2} className="img-fluid" alt="" />
                             <div className="social">
-                                <Link href="#"><i className="bi bi-twitter"></i></Link>
-                                <Link href="#"><i className="bi bi-facebook"></i></Link>
-                                <Link href="#"><i className="bi bi-instagram"></i></Link>
-                                <Link href="#"><i className="bi bi-linkedin"></i></Link>
+                                <Link href="#"><i><BiLogoTwitter/></i></Link>
+                                <Link href="#"><i><BiLogoInstagram/></i></Link>
+                                <Link href="#"><i><BiLogoFacebook/></i></Link>
+                                <Link href="#"><i><BiLogoLinkedin/></i></Link>
                             </div>
                         </div>
                         <div className="member-info text-center">
-                            <h4>Person 2 </h4>
-                            <span>Directeur Administratif et Financier</span>
+                            <h4>Personnel 2</h4>
+                            <span>Post 2</span>
                         </div>
                     </div>
 
